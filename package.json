@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run start-angular\" \"npm run start-json-server\"",
+    "start-angular": "ng serve",
     "start-json-server": "json-server ./src/data/db.json --port 3000 delay 1000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -42,6 +43,7 @@
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "angular-eslint": "19.3.0",
+    "concurrently": "^9.1.2",
     "eslint": "^9.23.0",
     "eslint-plugin-jasmine": "^4.2.2",
     "eslint-plugin-jest": "^28.11.0",
