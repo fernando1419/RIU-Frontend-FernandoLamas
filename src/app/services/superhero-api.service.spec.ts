@@ -137,5 +137,54 @@ describe('SuperheroApiService', () => {
          req.flush({ message: 'Missing required fields' }, { status: 400, statusText: 'Bad Request' });
       });
    });
+
+   describe('updateHero()', () => {
+      it('should update a superhero', () => {
+         const updatedHero: Superhero = {
+            id: 100,
+            name: 'updated hero name',
+            realName: 'updated Superhero real name',
+            powers: [],
+            universe: Universe.Dc,
+         };
+
+         service.updateHero(updatedHero.id, updatedHero).subscribe((hero) => {
+            expect(hero).toEqual(updatedHero);
+         });
+
+         const postRequest = httpTesting.expectOne(`${API_URL}/${updatedHero.id}`);
+         expect(postRequest.request.method).toBe('PATCH');
+         postRequest.flush(updatedHero);
+
+         const getRequest = httpTesting.expectOne(API_URL);
+         expect(getRequest.request.method).toBe('GET');
+         getRequest.flush([updatedHero]);
+      });
+
+      it('should return an error when required fields are missing', () => {
+         const heroWithoutUniverse: Superhero = {
+            id: 100,
+            name: 'new hero name',
+            realName: 'new hero real name',
+            powers: ['power1', 'power2'],
+            // universe: Universe.Dc,
+         } as Superhero;
+
+         service.updateHero(heroWithoutUniverse.id, heroWithoutUniverse).subscribe({
+            next: () => fail('Expected an error, but got a response'),
+            error: (error) => {
+               expect(error instanceof HttpErrorResponse).toBeTrue();
+               expect(error.status).toBe(400);
+               expect(error.statusText).toBe('Bad Request');
+            },
+         });
+
+         const req = httpTesting.expectOne(`${API_URL}/${heroWithoutUniverse.id}`);
+         expect(req.request.method).toBe('PATCH');
+         expect(req.request.body).toEqual(heroWithoutUniverse);
+
+         req.flush({ message: 'Missing required fields' }, { status: 400, statusText: 'Bad Request' });
+      });
+   });
 });
 

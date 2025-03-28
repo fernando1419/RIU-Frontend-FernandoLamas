@@ -240,41 +240,18 @@
       "deletedAt": null
     },
     {
-      "id": "10",
-      "name": "Black Widow",
-      "realName": "Natasha Romanoff",
-      "biography": "Natasha Romanoff is a former KGB agent and a key member of the Avengers, skilled in espionage and hand-to-hand combat.",
-      "powers": [
-        "Master spy",
-        "Expert in martial arts",
-        "Genius intellect"
-      ],
-      "universe": "Marvel",
-      "firstAppearance": "Tales of Suspense #52",
-      "team": "Avengers",
-      "aliases": [
-        "Natasha",
-        "The Black Widow"
-      ],
-      "images": {
-        "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/107-black-widow.jpg",
-        "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/107-black-widow.jpg",
-        "md": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/107-black-widow.jpg",
-        "lg": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/107-black-widow.jpg"
-      },
-      "updatedAt": null,
-      "deletedAt": null
+      "name": "updated hero name",
+      "realName": "updated hero real name",
+      "powers": [],
+      "universe": "DC",
+      "id": "10"
     },
     {
       "id": "11",
-      "name": "Green Lantern",
-      "realName": "Hal Jordan",
+      "name": "updated hero name",
+      "realName": "updated hero real name",
       "biography": "Hal Jordan is a test pilot who becomes the Green Lantern, using the power of a magical ring to fight evil across the universe.",
-      "powers": [
-        "Energy projection",
-        "Flight",
-        "Force field creation"
-      ],
+      "powers": [],
       "universe": "DC",
       "firstAppearance": "Showcase #22",
       "team": "Justice League",

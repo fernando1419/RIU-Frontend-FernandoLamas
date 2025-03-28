@@ -12,7 +12,7 @@ server.use((req, res, next) => {
    // eslint-disable-next-line no-undef
    setTimeout(next, delay);
 
-   if (req.method === 'POST' || req.method === 'PUT') {
+   if (req.method === 'POST' || req.method === 'PATCH') {
       const requiredFields = ['name', 'realName', 'powers', 'universe'];
       const missingFields = requiredFields.filter(field => !req.body[field]);
 

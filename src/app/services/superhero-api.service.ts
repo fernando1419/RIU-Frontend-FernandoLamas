@@ -36,6 +36,13 @@ export class SuperheroApiService {
       );
    }
 
+   updateHero(id: number, hero: Superhero): Observable<Superhero> {
+      return this.http.patch<Superhero>(`${API_URL}/${id}`, hero).pipe(
+         catchError((error) => this.handleError(error)),
+         tap(() => this.refreshHeroes()),
+      );
+   }
+
    private refreshHeroes() {
       this.getAllHeroes().subscribe();
    }
