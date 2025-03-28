@@ -1,7 +1,7 @@
 {
   "superheroes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Spiderman",
       "realName": "Peter Parker",
       "biography": "Peter Parker is a high school student who gains spider-like abilities after being bitten by a radioactive spider.",
@@ -14,7 +14,10 @@
       "universe": "Marvel",
       "firstAppearance": "Amazing Fantasy #15",
       "team": "Avengers",
-      "aliases": ["Spidey", "Webhead"],
+      "aliases": [
+        "Spidey",
+        "Webhead"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/620-spider-man.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/620-spider-man.jpg",
@@ -25,15 +28,23 @@
       "deletedAt": null
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Superman",
       "realName": "Clark Kent",
       "biography": "Superman is an alien from the planet Krypton who fights for truth, justice, and the American way.",
-      "powers": ["Super strength", "Flight", "X-ray vision", "Heat vision"],
+      "powers": [
+        "Super strength",
+        "Flight",
+        "X-ray vision",
+        "Heat vision"
+      ],
       "universe": "DC",
       "firstAppearance": "Action Comics #1",
       "team": "Justice League",
-      "aliases": ["Man of Steel", "The Last Son of Krypton"],
+      "aliases": [
+        "Man of Steel",
+        "The Last Son of Krypton"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/644-superman.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/644-superman.jpg",
@@ -44,15 +55,23 @@
       "deletedAt": null
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Wonder Woman",
       "realName": "Diana Prince",
       "biography": "Wonder Woman is an Amazonian princess and warrior with god-like abilities.",
-      "powers": ["Super strength", "Flight", "Combat skills", "Healing"],
+      "powers": [
+        "Super strength",
+        "Flight",
+        "Combat skills",
+        "Healing"
+      ],
       "universe": "DC",
       "firstAppearance": "All Star Comics #8",
       "team": "Justice League",
-      "aliases": ["Princess Diana", "The Amazon"],
+      "aliases": [
+        "Princess Diana",
+        "The Amazon"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/718-wonder-girl.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/718-wonder-girl.jpg",
@@ -63,7 +82,7 @@
       "deletedAt": null
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Iron Man",
       "realName": "Tony Stark",
       "biography": "Tony Stark is a genius inventor who created a powerful suit of armor to save his life and protect the world.",
@@ -76,7 +95,10 @@
       "universe": "Marvel",
       "firstAppearance": "Tales of Suspense #39",
       "team": "Avengers",
-      "aliases": ["Shellhead", "The Invincible Iron Man"],
+      "aliases": [
+        "Shellhead",
+        "The Invincible Iron Man"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/346-iron-man.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/346-iron-man.jpg",
@@ -87,7 +109,7 @@
       "deletedAt": null
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Batman",
       "realName": "Bruce Wayne",
       "biography": "Bruce Wayne is a billionaire playboy and philanthropist who fights crime as the Dark Knight in Gotham City.",
@@ -100,7 +122,10 @@
       "universe": "DC",
       "firstAppearance": "Detective Comics #27",
       "team": "Justice League",
-      "aliases": ["The Dark Knight", "The Caped Crusader"],
+      "aliases": [
+        "The Dark Knight",
+        "The Caped Crusader"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/70-batman.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/70-batman.jpg",
@@ -111,15 +136,22 @@
       "deletedAt": null
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Captain America",
       "realName": "Steve Rogers",
       "biography": "Steve Rogers, a soldier from World War II, was enhanced to the peak of human physicality and became Captain America.",
-      "powers": ["Super strength", "Enhanced agility", "Indestructible shield"],
+      "powers": [
+        "Super strength",
+        "Enhanced agility",
+        "Indestructible shield"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Captain America Comics #1",
       "team": "Avengers",
-      "aliases": ["Cap", "The First Avenger"],
+      "aliases": [
+        "Cap",
+        "The First Avenger"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/149-captain-america.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/149-captain-america.jpg",
@@ -130,15 +162,22 @@
       "deletedAt": null
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Flash",
       "realName": "Barry Allen",
       "biography": "Barry Allen is a forensic scientist who gains the ability to move at superhuman speeds.",
-      "powers": ["Super speed", "Time travel", "Vibration manipulation"],
+      "powers": [
+        "Super speed",
+        "Time travel",
+        "Vibration manipulation"
+      ],
       "universe": "DC",
       "firstAppearance": "Showcase #4",
       "team": "Justice League",
-      "aliases": ["Scarlet Speedster", "The Fastest Man Alive"],
+      "aliases": [
+        "Scarlet Speedster",
+        "The Fastest Man Alive"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/265-flash-ii.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/265-flash-ii.jpg",
@@ -149,15 +188,22 @@
       "deletedAt": null
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Hulk",
       "realName": "Bruce Banner",
       "biography": "Bruce Banner transforms into the Hulk when he is angered, gaining immense strength and invulnerability.",
-      "powers": ["Super strength", "Regeneration", "Immune to bullets"],
+      "powers": [
+        "Super strength",
+        "Regeneration",
+        "Immune to bullets"
+      ],
       "universe": "Marvel",
       "firstAppearance": "The Incredible Hulk #1",
       "team": "Avengers",
-      "aliases": ["The Green Goliath", "The Hulk"],
+      "aliases": [
+        "The Green Goliath",
+        "The Hulk"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/332-hulk.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/332-hulk.jpg",
@@ -168,7 +214,7 @@
       "deletedAt": null
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Thor",
       "realName": "Thor Odinson",
       "biography": "Thor is the Norse God of Thunder, protector of Midgard, and wielding the powerful hammer Mjolnir.",
@@ -180,7 +226,10 @@
       "universe": "Marvel",
       "firstAppearance": "Journey into Mystery #83",
       "team": "Avengers",
-      "aliases": ["God of Thunder", "The Mighty Thor"],
+      "aliases": [
+        "God of Thunder",
+        "The Mighty Thor"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/659-thor.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/659-thor.jpg",
@@ -191,15 +240,22 @@
       "deletedAt": null
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Black Widow",
       "realName": "Natasha Romanoff",
       "biography": "Natasha Romanoff is a former KGB agent and a key member of the Avengers, skilled in espionage and hand-to-hand combat.",
-      "powers": ["Master spy", "Expert in martial arts", "Genius intellect"],
+      "powers": [
+        "Master spy",
+        "Expert in martial arts",
+        "Genius intellect"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Tales of Suspense #52",
       "team": "Avengers",
-      "aliases": ["Natasha", "The Black Widow"],
+      "aliases": [
+        "Natasha",
+        "The Black Widow"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/107-black-widow.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/107-black-widow.jpg",
@@ -210,15 +266,22 @@
       "deletedAt": null
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Green Lantern",
       "realName": "Hal Jordan",
       "biography": "Hal Jordan is a test pilot who becomes the Green Lantern, using the power of a magical ring to fight evil across the universe.",
-      "powers": ["Energy projection", "Flight", "Force field creation"],
+      "powers": [
+        "Energy projection",
+        "Flight",
+        "Force field creation"
+      ],
       "universe": "DC",
       "firstAppearance": "Showcase #22",
       "team": "Justice League",
-      "aliases": ["The Emerald Crusader", "Green Lantern"],
+      "aliases": [
+        "The Emerald Crusader",
+        "Green Lantern"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/306-hal-jordan.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/306-hal-jordan.jpg",
@@ -229,15 +292,22 @@
       "deletedAt": null
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Aquaman",
       "realName": "Arthur Curry",
       "biography": "Aquaman is the king of Atlantis and protector of the oceans, possessing abilities to control sea creatures and survive underwater.",
-      "powers": ["Super strength", "Hydrokinesis", "Aquatic respiration"],
+      "powers": [
+        "Super strength",
+        "Hydrokinesis",
+        "Aquatic respiration"
+      ],
       "universe": "DC",
       "firstAppearance": "More Fun Comics #73",
       "team": "Justice League",
-      "aliases": ["King of Atlantis", "Aquatic Avenger"],
+      "aliases": [
+        "King of Atlantis",
+        "Aquatic Avenger"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/38-aquaman.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/38-aquaman.jpg",
@@ -248,15 +318,22 @@
       "deletedAt": null
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Black Panther",
       "realName": "T'Challa",
       "biography": "T'Challa is the king of Wakanda, a technologically advanced African nation, and a superhero known as Black Panther.",
-      "powers": ["Enhanced senses", "Super strength", "Vibranium suit"],
+      "powers": [
+        "Enhanced senses",
+        "Super strength",
+        "Vibranium suit"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Fantastic Four #52",
       "team": "Avengers",
-      "aliases": ["King of Wakanda", "The Panther"],
+      "aliases": [
+        "King of Wakanda",
+        "The Panther"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/106-black-panther.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/106-black-panther.jpg",
@@ -267,15 +344,22 @@
       "deletedAt": null
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Scarlet Witch",
       "realName": "Wanda Maximoff",
       "biography": "Wanda Maximoff is a powerful mutant with reality-warping abilities, and a member of the Avengers.",
-      "powers": ["Reality manipulation", "Telekinesis", "Energy manipulation"],
+      "powers": [
+        "Reality manipulation",
+        "Telekinesis",
+        "Energy manipulation"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #4",
       "team": "Avengers",
-      "aliases": ["The Scarlet Witch", "Wanda"],
+      "aliases": [
+        "The Scarlet Witch",
+        "Wanda"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/579-scarlet-witch.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/579-scarlet-witch.jpg",
@@ -286,15 +370,22 @@
       "deletedAt": null
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Doctor Strange",
       "realName": "Stephen Strange",
       "biography": "Doctor Stephen Strange is a former surgeon who becomes the Sorcerer Supreme to protect Earth from mystical threats.",
-      "powers": ["Magic", "Dimensional travel", "Astral projection"],
+      "powers": [
+        "Magic",
+        "Dimensional travel",
+        "Astral projection"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Strange Tales #110",
       "team": "Defenders",
-      "aliases": ["Sorcerer Supreme", "Master of the Mystic Arts"],
+      "aliases": [
+        "Sorcerer Supreme",
+        "Master of the Mystic Arts"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/226-doctor-strange.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/226-doctor-strange.jpg",
@@ -305,7 +396,7 @@
       "deletedAt": null
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Deadpool",
       "realName": "Wade Wilson",
       "biography": "Wade Wilson is a mercenary who, after an experiment, gains regenerative healing powers.",
@@ -317,7 +408,10 @@
       "universe": "Marvel",
       "firstAppearance": "New Mutants #98",
       "team": "X-Force",
-      "aliases": ["The Merc with a Mouth", "Deadpool"],
+      "aliases": [
+        "The Merc with a Mouth",
+        "Deadpool"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/213-deadpool.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/213-deadpool.jpg",
@@ -328,15 +422,22 @@
       "deletedAt": null
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Hawkeye",
       "realName": "Clint Barton",
       "biography": "Clint Barton is a master archer and former SHIELD agent, known for his precision and agility.",
-      "powers": ["Expert archer", "Martial arts", "Acrobatics"],
+      "powers": [
+        "Expert archer",
+        "Martial arts",
+        "Acrobatics"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Tales of Suspense #57",
       "team": "Avengers",
-      "aliases": ["Clint", "The Archer"],
+      "aliases": [
+        "Clint",
+        "The Archer"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/313-hawkeye.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/313-hawkeye.jpg",
@@ -347,7 +448,7 @@
       "deletedAt": null
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "The Punisher",
       "realName": "Frank Castle",
       "biography": "Frank Castle is a former Marine who wages war on crime after his family is killed.",
@@ -359,7 +460,9 @@
       "universe": "Marvel",
       "firstAppearance": "The Amazing Spider-Man #129",
       "team": "Solo",
-      "aliases": ["The Punisher"],
+      "aliases": [
+        "The Punisher"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/530-punisher.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/530-punisher.jpg",
@@ -370,15 +473,21 @@
       "deletedAt": null
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Green Arrow",
       "realName": "Oliver Queen",
       "biography": "Oliver Queen is a billionaire who becomes a vigilante archer, protecting Star City.",
-      "powers": ["Expert archery", "Hand-to-hand combat"],
+      "powers": [
+        "Expert archery",
+        "Hand-to-hand combat"
+      ],
       "universe": "DC",
       "firstAppearance": "More Fun Comics #73",
       "team": "Justice League",
-      "aliases": ["The Emerald Archer", "Green Arrow"],
+      "aliases": [
+        "The Emerald Archer",
+        "Green Arrow"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/298-green-arrow.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/298-green-arrow.jpg",
@@ -389,15 +498,22 @@
       "deletedAt": null
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Luke Cage",
       "realName": "Carl Lucas",
       "biography": "Luke Cage is a hero for hire with unbreakable skin and superhuman strength.",
-      "powers": ["Super strength", "Unbreakable skin", "Regeneration"],
+      "powers": [
+        "Super strength",
+        "Unbreakable skin",
+        "Regeneration"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Luke Cage, Hero for Hire #1",
       "team": "Defenders",
-      "aliases": ["Power Man", "Luke Cage"],
+      "aliases": [
+        "Power Man",
+        "Luke Cage"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/416-luke-cage.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/416-luke-cage.jpg",
@@ -408,15 +524,21 @@
       "deletedAt": null
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Shazam",
       "realName": "Billy Batson",
       "biography": "Billy Batson is a young boy who, by saying the word 'Shazam', transforms into the superhero Shazam.",
-      "powers": ["Super strength", "Lightning manipulation", "Flight"],
+      "powers": [
+        "Super strength",
+        "Lightning manipulation",
+        "Flight"
+      ],
       "universe": "DC",
       "firstAppearance": "Whiz Comics #2",
       "team": "Justice League",
-      "aliases": ["The Big Red Cheese"],
+      "aliases": [
+        "The Big Red Cheese"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/156-captain-marvel.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/156-captain-marvel.jpg",
@@ -427,15 +549,21 @@
       "deletedAt": null
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Silver Surfer",
       "realName": "Norrin Radd",
       "biography": "Norrin Radd was a young astronomer on the planet Zenn-La who becomes the Silver Surfer after pledging himself to Galactus.",
-      "powers": ["Cosmic power", "Flight", "Energy projection"],
+      "powers": [
+        "Cosmic power",
+        "Flight",
+        "Energy projection"
+      ],
       "universe": "Marvel",
       "firstAppearance": "The Fantastic Four #48",
       "team": "Avengers",
-      "aliases": ["The Sentinel of the Spaceways"],
+      "aliases": [
+        "The Sentinel of the Spaceways"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/598-silver-surfer.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/598-silver-surfer.jpg",
@@ -446,15 +574,22 @@
       "deletedAt": null
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Storm",
       "realName": "Ororo Munroe",
       "biography": "Ororo Munroe, also known as Storm, is a mutant who can manipulate the weather and is a member of the X-Men.",
-      "powers": ["Weather control", "Flight", "Combat skills"],
+      "powers": [
+        "Weather control",
+        "Flight",
+        "Combat skills"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Giant-Size X-Men #1",
       "team": "X-Men",
-      "aliases": ["Ororo Munroe", "Weather Witch"],
+      "aliases": [
+        "Ororo Munroe",
+        "Weather Witch"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/638-storm.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/638-storm.jpg",
@@ -465,15 +600,22 @@
       "deletedAt": null
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Wolverine",
       "realName": "James Howlett",
       "biography": "Wolverine is a mutant with enhanced senses and a healing factor, and is known for his claws made of adamantium.",
-      "powers": ["Regeneration", "Enhanced senses", "Adamantium claws"],
+      "powers": [
+        "Regeneration",
+        "Enhanced senses",
+        "Adamantium claws"
+      ],
       "universe": "Marvel",
       "firstAppearance": "The Incredible Hulk #180",
       "team": "X-Men",
-      "aliases": ["Logan", "Weapon X"],
+      "aliases": [
+        "Logan",
+        "Weapon X"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/717-wolverine.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/717-wolverine.jpg",
@@ -484,15 +626,20 @@
       "deletedAt": null
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Cyclops",
       "realName": "Scott Summers",
       "biography": "Scott Summers is a mutant with the ability to shoot powerful optic blasts from his eyes.",
-      "powers": ["Optic blasts", "Expert tactician"],
+      "powers": [
+        "Optic blasts",
+        "Expert tactician"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #1",
       "team": "X-Men",
-      "aliases": ["Slim"],
+      "aliases": [
+        "Slim"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/196-cyclops.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/196-cyclops.jpg",
@@ -503,15 +650,21 @@
       "deletedAt": null
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Professor X",
       "realName": "Charles Xavier",
       "biography": "Charles Xavier is a mutant with telepathic abilities and the founder of the X-Men.",
-      "powers": ["Telepathy", "Mind control", "Mental projection"],
+      "powers": [
+        "Telepathy",
+        "Mind control",
+        "Mental projection"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #1",
       "team": "X-Men",
-      "aliases": ["Professor Xavier"],
+      "aliases": [
+        "Professor Xavier"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/527-professor-x.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/527-professor-x.jpg",
@@ -522,15 +675,21 @@
       "deletedAt": null
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Beast",
       "realName": "Henry 'Hank' McCoy",
       "biography": "Henry McCoy is a mutant with superhuman strength, agility, and the ability to leap great distances.",
-      "powers": ["Superhuman strength", "Agility", "Genius intellect"],
+      "powers": [
+        "Superhuman strength",
+        "Agility",
+        "Genius intellect"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #1",
       "team": "X-Men",
-      "aliases": ["Hank"],
+      "aliases": [
+        "Hank"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/75-beast.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/75-beast.jpg",
@@ -541,15 +700,21 @@
       "deletedAt": null
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Rogue",
       "realName": "Anna Marie",
       "biography": "Rogue is a mutant who can absorb the powers and memories of others by touch.",
-      "powers": ["Power absorption", "Flight", "Super strength"],
+      "powers": [
+        "Power absorption",
+        "Flight",
+        "Super strength"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Avengers Annual #10",
       "team": "X-Men",
-      "aliases": ["Anna Marie"],
+      "aliases": [
+        "Anna Marie"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/567-rogue.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/567-rogue.jpg",
@@ -560,15 +725,21 @@
       "deletedAt": null
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Vision",
       "realName": "Victor Shade",
       "biography": "Vision is an android created by Ultron, later becoming a key member of the Avengers.",
-      "powers": ["Density control", "Solar energy absorption", "Intangibility"],
+      "powers": [
+        "Density control",
+        "Solar energy absorption",
+        "Intangibility"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Avengers #57",
       "team": "Avengers",
-      "aliases": ["The Synthetic Man"],
+      "aliases": [
+        "The Synthetic Man"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/697-vision.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/697-vision.jpg",
@@ -579,7 +750,7 @@
       "deletedAt": null
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Ant-Man",
       "realName": "Scott Lang",
       "biography": "Scott Lang is a former thief who becomes Ant-Man after taking up the mantle from Hank Pym.",
@@ -591,7 +762,9 @@
       "universe": "Marvel",
       "firstAppearance": "Avengers #181",
       "team": "Avengers",
-      "aliases": ["Ant-Man"],
+      "aliases": [
+        "Ant-Man"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/31-ant-man-ii.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/31-ant-man-ii.jpg",
@@ -602,15 +775,21 @@
       "deletedAt": null
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Black Canary",
       "realName": "Dinah Laurel Lance",
       "biography": "Dinah Lance, also known as Black Canary, is a skilled martial artist and has a sonic scream.",
-      "powers": ["Sonic scream", "Martial arts skills", "Acrobatics"],
+      "powers": [
+        "Sonic scream",
+        "Martial arts skills",
+        "Acrobatics"
+      ],
       "universe": "DC",
       "firstAppearance": "Flash Comics #86",
       "team": "Justice League",
-      "aliases": ["The Canary"],
+      "aliases": [
+        "The Canary"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/97-black-canary.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/97-black-canary.jpg",
@@ -621,15 +800,21 @@
       "deletedAt": null
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Nightwing",
       "realName": "Dick Grayson",
       "biography": "Dick Grayson is the original Robin who later becomes Nightwing after parting ways with Batman.",
-      "powers": ["Acrobatics", "Martial arts", "Genius intellect"],
+      "powers": [
+        "Acrobatics",
+        "Martial arts",
+        "Genius intellect"
+      ],
       "universe": "DC",
       "firstAppearance": "Tales of the Teen Titans #44",
       "team": "Teen Titans",
-      "aliases": ["The Boy Wonder"],
+      "aliases": [
+        "The Boy Wonder"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/491-nightwing.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/491-nightwing.jpg",
@@ -640,15 +825,21 @@
       "deletedAt": null
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Batgirl",
       "realName": "Barbara Gordon",
       "biography": "Barbara Gordon is the daughter of Gotham City’s police commissioner, who becomes Batgirl to fight crime alongside Batman.",
-      "powers": ["Martial arts", "Computer hacking", "Expert detective skills"],
+      "powers": [
+        "Martial arts",
+        "Computer hacking",
+        "Expert detective skills"
+      ],
       "universe": "DC",
       "firstAppearance": "Detective Comics #359",
       "team": "Birds of Prey",
-      "aliases": ["The Dark Knight's Daughter"],
+      "aliases": [
+        "The Dark Knight's Daughter"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/63-batgirl.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/63-batgirl.jpg",
@@ -659,15 +850,21 @@
       "deletedAt": null
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "The Atom",
       "realName": "Ray Palmer",
       "biography": "Ray Palmer is a physicist who uses a suit to shrink his size while maintaining his full strength.",
-      "powers": ["Size manipulation", "Super strength", "Genius intellect"],
+      "powers": [
+        "Size manipulation",
+        "Super strength",
+        "Genius intellect"
+      ],
       "universe": "DC",
       "firstAppearance": "Showcase #34",
       "team": "Justice League",
-      "aliases": ["The Shrinking Hero"],
+      "aliases": [
+        "The Shrinking Hero"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/53-atom-ii.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/53-atom-ii.jpg",
@@ -678,15 +875,21 @@
       "deletedAt": null
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Hawkwoman",
       "realName": "Shiera Sanders",
       "biography": "Shiera Sanders is a reincarnation of the ancient Egyptian heroine Hawkwoman, possessing the ability to fly and enhanced strength.",
-      "powers": ["Flight", "Super strength", "Weapon proficiency"],
+      "powers": [
+        "Flight",
+        "Super strength",
+        "Weapon proficiency"
+      ],
       "universe": "DC",
       "firstAppearance": "All Star Comics #5",
       "team": "Justice League",
-      "aliases": ["The Winged Warrior"],
+      "aliases": [
+        "The Winged Warrior"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/315-hawkgirl.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/315-hawkgirl.jpg",
@@ -697,15 +900,21 @@
       "deletedAt": null
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Jonah Hex",
       "realName": "Jonah Hex",
       "biography": "Jonah Hex is a bounty hunter in the Old West, known for his scarred face and brutal nature.",
-      "powers": ["Sharpshooting", "Survival skills", "Hand-to-hand combat"],
+      "powers": [
+        "Sharpshooting",
+        "Survival skills",
+        "Hand-to-hand combat"
+      ],
       "universe": "DC",
       "firstAppearance": "All-Star Western #10",
       "team": "Solo",
-      "aliases": ["The Bounty Hunter"],
+      "aliases": [
+        "The Bounty Hunter"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/127-boba-fett.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/127-boba-fett.jpg",
@@ -716,15 +925,21 @@
       "deletedAt": null
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Zatanna",
       "realName": "Zatanna Zatara",
       "biography": "Zatanna Zatara is a powerful magician who casts spells by speaking backwards.",
-      "powers": ["Magic", "Teleportation", "Illusions"],
+      "powers": [
+        "Magic",
+        "Teleportation",
+        "Illusions"
+      ],
       "universe": "DC",
       "firstAppearance": "Hawkman #4",
       "team": "Justice League Dark",
-      "aliases": ["The Mistress of Magic"],
+      "aliases": [
+        "The Mistress of Magic"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/730-zatanna.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/730-zatanna.jpg",
@@ -735,15 +950,21 @@
       "deletedAt": null
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Dr. Fate",
       "realName": "Kent Nelson",
       "biography": "Dr. Fate is a powerful sorcerer who wears the Helmet of Nabu, granting him magical abilities.",
-      "powers": ["Magic", "Flight", "Telekinesis"],
+      "powers": [
+        "Magic",
+        "Flight",
+        "Telekinesis"
+      ],
       "universe": "DC",
       "firstAppearance": "More Fun Comics #55",
       "team": "Justice Society of America",
-      "aliases": ["The Lord of Order"],
+      "aliases": [
+        "The Lord of Order"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/224-doctor-fate.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/224-doctor-fate.jpg",
@@ -754,15 +975,21 @@
       "deletedAt": null
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Mister Miracle",
       "realName": "Scott Free",
       "biography": "Scott Free is the world’s greatest escape artist, hailing from the planet New Genesis.",
-      "powers": ["Escape artistry", "Super strength", "Flight"],
+      "powers": [
+        "Escape artistry",
+        "Super strength",
+        "Flight"
+      ],
       "universe": "DC",
       "firstAppearance": "Mister Miracle #1",
       "team": "Justice League",
-      "aliases": ["The King of Escape"],
+      "aliases": [
+        "The King of Escape"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/81-big-barda.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/81-big-barda.jpg",
@@ -773,15 +1000,21 @@
       "deletedAt": null
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Red Tornado",
       "realName": "John Smith",
       "biography": "Red Tornado is a synthetic android hero with the ability to generate powerful windstorms.",
-      "powers": ["Wind manipulation", "Flight", "Super strength"],
+      "powers": [
+        "Wind manipulation",
+        "Flight",
+        "Super strength"
+      ],
       "universe": "DC",
       "firstAppearance": "Justice League of America #64",
       "team": "Justice League",
-      "aliases": ["The Android Avenger"],
+      "aliases": [
+        "The Android Avenger"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/551-red-tornado.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/551-red-tornado.jpg",
@@ -792,15 +1025,21 @@
       "deletedAt": null
     },
     {
-      "id": 41,
+      "id": "41",
       "name": "Hawkman",
       "realName": "Carter Hall",
       "biography": "Carter Hall is the reincarnation of an ancient Egyptian prince, who becomes Hawkman, armed with advanced weaponry and flight.",
-      "powers": ["Flight", "Super strength", "Weapon proficiency"],
+      "powers": [
+        "Flight",
+        "Super strength",
+        "Weapon proficiency"
+      ],
       "universe": "DC",
       "firstAppearance": "Flash Comics #1",
       "team": "Justice League",
-      "aliases": ["The Winged Avenger"],
+      "aliases": [
+        "The Winged Avenger"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/320-heat-wave.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/320-heat-wave.jpg",
@@ -811,16 +1050,22 @@
       "deletedAt": null
     },
     {
-      "id": 42,
+      "id": "42",
       "name": "Captain Marvel (Carol Danvers)",
       "realName": "Carol Danvers",
       "biography": "Carol Danvers is a former Air Force officer who becomes Captain Marvel after being exposed to alien technology.",
-      "powers": ["Super strength", "Energy manipulation", "Flight"],
+      "powers": [
+        "Super strength",
+        "Energy manipulation",
+        "Flight"
+      ],
       "universe": "Marvel",
       "image": "https://example.com/captainmarvel.jpg",
       "firstAppearance": "Marvel Super-Heroes #13",
       "team": "Avengers",
-      "aliases": ["Ms. Marvel"],
+      "aliases": [
+        "Ms. Marvel"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/157-captain-marvel.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/157-captain-marvel.jpg",
@@ -831,15 +1076,21 @@
       "deletedAt": null
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Ghost Rider",
       "realName": "Johnny Blaze",
       "biography": "Johnny Blaze is a stunt motorcyclist who becomes Ghost Rider after making a pact with the devil.",
-      "powers": ["Hellfire manipulation", "Super strength", "Regeneration"],
+      "powers": [
+        "Hellfire manipulation",
+        "Super strength",
+        "Regeneration"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Marvel Spotlight #5",
       "team": "None",
-      "aliases": ["The Spirit of Vengeance"],
+      "aliases": [
+        "The Spirit of Vengeance"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/280-ghost-rider.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/280-ghost-rider.jpg",
@@ -850,7 +1101,7 @@
       "deletedAt": null
     },
     {
-      "id": 44,
+      "id": "44",
       "name": "Blade",
       "realName": "Eric Brooks",
       "biography": "Blade is a half-vampire, half-human vampire hunter who possesses many vampire-like abilities.",
@@ -862,7 +1113,9 @@
       "universe": "Marvel",
       "firstAppearance": "Tomb of Dracula #10",
       "team": "None",
-      "aliases": ["The Daywalker"],
+      "aliases": [
+        "The Daywalker"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/112-blade.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/112-blade.jpg",
@@ -873,15 +1126,21 @@
       "deletedAt": null
     },
     {
-      "id": 45,
+      "id": "45",
       "name": "Jessica Jones",
       "realName": "Jessica Jones",
       "biography": "Jessica Jones is a private investigator with superhuman strength and the ability to fly.",
-      "powers": ["Super strength", "Flight", "Invulnerability"],
+      "powers": [
+        "Super strength",
+        "Flight",
+        "Invulnerability"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Alias #1",
       "team": "The Defenders",
-      "aliases": ["Jewel"],
+      "aliases": [
+        "Jewel"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/361-jessica-jones.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/361-jessica-jones.jpg",
@@ -892,15 +1151,21 @@
       "deletedAt": null
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Iron Fist",
       "realName": "Danny Rand",
       "biography": "Danny Rand is a martial artist with the power of the Iron Fist, which gives him incredible strength and energy blasts.",
-      "powers": ["Martial arts", "Chi manipulation", "Superhuman strength"],
+      "powers": [
+        "Martial arts",
+        "Chi manipulation",
+        "Superhuman strength"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Marvel Premiere #15",
       "team": "The Defenders",
-      "aliases": ["The Immortal Iron Fist"],
+      "aliases": [
+        "The Immortal Iron Fist"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/345-iron-fist.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/345-iron-fist.jpg",
@@ -911,15 +1176,21 @@
       "deletedAt": null
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "The Thing",
       "realName": "Ben Grimm",
       "biography": "Ben Grimm is a member of the Fantastic Four who possesses immense strength and a rocky, nearly indestructible body.",
-      "powers": ["Super strength", "Invulnerability", "Durability"],
+      "powers": [
+        "Super strength",
+        "Invulnerability",
+        "Durability"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Fantastic Four #1",
       "team": "Fantastic Four",
-      "aliases": ["The Ever-Lovin' Blue-Eyed Thing"],
+      "aliases": [
+        "The Ever-Lovin' Blue-Eyed Thing"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/658-thing.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/658-thing.jpg",
@@ -930,15 +1201,21 @@
       "deletedAt": null
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Sue Storm",
       "realName": "Susan Storm",
       "biography": "Sue Storm, also known as the Invisible Woman, is a founding member of the Fantastic Four, with the ability to turn invisible and create force fields.",
-      "powers": ["Invisibility", "Force field generation", "Flight"],
+      "powers": [
+        "Invisibility",
+        "Force field generation",
+        "Flight"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Fantastic Four #1",
       "team": "Fantastic Four",
-      "aliases": ["Invisible Woman"],
+      "aliases": [
+        "Invisible Woman"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/344-invisible-woman.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/344-invisible-woman.jpg",
@@ -949,15 +1226,21 @@
       "deletedAt": null
     },
     {
-      "id": 49,
+      "id": "49",
       "name": "Reed Richards",
       "realName": "Reed Richards",
       "biography": "Reed Richards is the leader of the Fantastic Four and is a brilliant scientist with the ability to stretch his body.",
-      "powers": ["Elasticity", "Genius intellect", "Invention"],
+      "powers": [
+        "Elasticity",
+        "Genius intellect",
+        "Invention"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Fantastic Four #1",
       "team": "Fantastic Four",
-      "aliases": ["Mr. Fantastic"],
+      "aliases": [
+        "Mr. Fantastic"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/456-mister-fantastic.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/456-mister-fantastic.jpg",
@@ -968,15 +1251,21 @@
       "deletedAt": null
     },
     {
-      "id": 50,
+      "id": "50",
       "name": "Johnny Storm",
       "realName": "Johnny Storm",
       "biography": "Johnny Storm, also known as the Human Torch, has the ability to create and control fire.",
-      "powers": ["Fire manipulation", "Flight", "Invulnerability"],
+      "powers": [
+        "Fire manipulation",
+        "Flight",
+        "Invulnerability"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Fantastic Four #1",
       "team": "Fantastic Four",
-      "aliases": ["Human Torch"],
+      "aliases": [
+        "Human Torch"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/333-human-torch.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/333-human-torch.jpg",
@@ -987,15 +1276,21 @@
       "deletedAt": null
     },
     {
-      "id": 51,
+      "id": "51",
       "name": "Jean Grey",
       "realName": "Jean Grey",
       "biography": "Jean Grey is a powerful telepath and telekinetic, and a founding member of the X-Men.",
-      "powers": ["Telepathy", "Telekinesis", "Flight"],
+      "powers": [
+        "Telepathy",
+        "Telekinesis",
+        "Flight"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #1",
       "team": "X-Men",
-      "aliases": ["Marvel Girl"],
+      "aliases": [
+        "Marvel Girl"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/356-jean-grey.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/356-jean-grey.jpg",
@@ -1006,15 +1301,21 @@
       "deletedAt": null
     },
     {
-      "id": 52,
+      "id": "52",
       "name": "Nightcrawler",
       "realName": "Kurt Wagner",
       "biography": "Nightcrawler is a teleporter and member of the X-Men with a demonic appearance but a kind heart.",
-      "powers": ["Teleportation", "Super agility", "Enhanced senses"],
+      "powers": [
+        "Teleportation",
+        "Super agility",
+        "Enhanced senses"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Giant-Size X-Men #1",
       "team": "X-Men",
-      "aliases": ["Kurt"],
+      "aliases": [
+        "Kurt"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/490-nightcrawler.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/490-nightcrawler.jpg",
@@ -1025,15 +1326,21 @@
       "deletedAt": null
     },
     {
-      "id": 53,
+      "id": "53",
       "name": "Gambit",
       "realName": "Remy LeBeau",
       "biography": "Gambit is a skilled thief with the ability to charge objects, particularly playing cards, with explosive kinetic energy.",
-      "powers": ["Kinetic energy manipulation", "Hand-to-hand combat", "Charm"],
+      "powers": [
+        "Kinetic energy manipulation",
+        "Hand-to-hand combat",
+        "Charm"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Uncanny X-Men #266",
       "team": "X-Men",
-      "aliases": ["Remy LeBeau"],
+      "aliases": [
+        "Remy LeBeau"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/274-gambit.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/274-gambit.jpg",
@@ -1044,15 +1351,21 @@
       "deletedAt": null
     },
     {
-      "id": 54,
+      "id": "54",
       "name": "Iceman",
       "realName": "Bobby Drake",
       "biography": "Iceman is a founding member of the X-Men who can generate and control ice.",
-      "powers": ["Ice manipulation", "Cold resistance", "Flight"],
+      "powers": [
+        "Ice manipulation",
+        "Cold resistance",
+        "Flight"
+      ],
       "universe": "Marvel",
       "firstAppearance": "X-Men #1",
       "team": "X-Men",
-      "aliases": ["Bobby Drake"],
+      "aliases": [
+        "Bobby Drake"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/339-iceman.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/339-iceman.jpg",
@@ -1063,15 +1376,21 @@
       "deletedAt": null
     },
     {
-      "id": 55,
+      "id": "55",
       "name": "Shang-Chi",
       "realName": "Shang-Chi",
       "biography": "Shang-Chi is a martial artist known for his skill in hand-to-hand combat and his ability to defeat even the strongest opponents.",
-      "powers": ["Martial arts", "Enhanced agility", "Mastery of combat"],
+      "powers": [
+        "Martial arts",
+        "Enhanced agility",
+        "Mastery of combat"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Special Marvel Edition #15",
       "team": "None",
-      "aliases": ["Master of Kung Fu"],
+      "aliases": [
+        "Master of Kung Fu"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/587-shang-chi.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/587-shang-chi.jpg",
@@ -1082,15 +1401,21 @@
       "deletedAt": null
     },
     {
-      "id": 56,
+      "id": "56",
       "name": "Venom",
       "realName": "Eddie Brock",
       "biography": "Eddie Brock becomes Venom after bonding with an alien symbiote. He possesses enhanced strength and a variety of unique abilities.",
-      "powers": ["Super strength", "Regeneration", "Symbiote abilities"],
+      "powers": [
+        "Super strength",
+        "Regeneration",
+        "Symbiote abilities"
+      ],
       "universe": "Marvel",
       "firstAppearance": "The Amazing Spider-Man #300",
       "team": "None",
-      "aliases": ["Venom"],
+      "aliases": [
+        "Venom"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/687-venom.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/687-venom.jpg",
@@ -1101,15 +1426,21 @@
       "deletedAt": null
     },
     {
-      "id": 57,
+      "id": "57",
       "name": "Daredevil",
       "realName": "Matt Murdock",
       "biography": "Matt Murdock is a blind lawyer by day and Daredevil by night, using his enhanced senses and combat skills to fight crime in Hell's Kitchen.",
-      "powers": ["Superhuman senses", "Expert martial artist", "Acrobat"],
+      "powers": [
+        "Superhuman senses",
+        "Expert martial artist",
+        "Acrobat"
+      ],
       "universe": "Marvel",
       "firstAppearance": "Daredevil #1",
       "team": "Defenders",
-      "aliases": ["The Man Without Fear"],
+      "aliases": [
+        "The Man Without Fear"
+      ],
       "images": {
         "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/201-daredevil.jpg",
         "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/201-daredevil.jpg",
@@ -1118,6 +1449,70 @@
       },
       "updatedAt": null,
       "deletedAt": null
+    },
+    {
+      "id": "101"
+    },
+    {
+      "id": "101"
+    },
+    {
+      "id": "101"
+    },
+    {
+      "id": "101"
+    },
+    {
+      "id": "7fa7",
+      "name": "new superhero!!"
+    },
+    {
+      "id": "650b",
+      "name": "new superhero!!"
+    },
+    {
+      "id": "bc62",
+      "name": "new superhero!!"
+    },
+    {
+      "name": "new hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "power1",
+        "power2"
+      ],
+      "universe": "DC",
+      "id": "Jj0u87e"
+    },
+    {
+      "name": "new hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "power1",
+        "power2"
+      ],
+      "universe": "DC",
+      "id": "6EsqMHI"
+    },
+    {
+      "name": "new hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "power1",
+        "power2"
+      ],
+      "universe": "DC",
+      "id": "5GDt7HD"
+    },
+    {
+      "name": "new hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "power1",
+        "power2"
+      ],
+      "universe": "DC",
+      "id": "KYRN18p"
     }
   ]
 }

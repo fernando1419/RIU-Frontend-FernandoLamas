@@ -18,15 +18,26 @@ export class SuperheroApiService {
 
    getAllHeroes(): Observable<Superhero[]> {
       return this.http.get<Superhero[]>(API_URL).pipe(
-         tap((heroes) => this.superheroes.set(heroes)),
          catchError((error) => this.handleError(error)),
+         tap((heroes) => this.superheroes.set(heroes)),
       );
    }
 
    getHeroById(id: number): Observable<Superhero> {
       return this.http.get<Superhero>(`${API_URL}/${id}`).pipe(
-         catchError((error) => this.handleError(error)),
+         catchError(error => this.handleError(error)),
       );
+   }
+
+   addHero(hero: Superhero): Observable<Superhero> {
+      return this.http.post<Superhero>(API_URL, hero).pipe(
+         catchError((error) => this.handleError(error)),
+         tap(() => this.refreshHeroes()),
+      );
+   }
+
+   private refreshHeroes() {
+      this.getAllHeroes().subscribe();
    }
 
    private handleError(error: HttpErrorResponse) {

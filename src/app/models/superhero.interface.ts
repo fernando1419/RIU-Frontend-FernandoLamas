@@ -6,16 +6,15 @@ export interface Superhero {
    id: number;
    name: string;
    realName: string;
-   biography: string;
    powers: string[];
    universe: Universe;
-   firstAppearance: string;
-   team: string;
-   aliases: string[];
-   images: Images;
-   updatedAt: Date | null;
-   deletedAt: Date | null;
-   image?: string;
+   aliases?: string[];
+   biography?: string;
+   firstAppearance?: string;
+   team?: string;
+   images?: Images;
+   updatedAt?: Date | null;
+   deletedAt?: Date | null;
 }
 
 export interface Images {

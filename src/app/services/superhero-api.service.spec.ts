@@ -1,12 +1,13 @@
 import { HttpErrorResponse, provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { Superhero } from 'src/app/models/superhero.interface';
+import { Superhero, Universe } from 'src/app/models/superhero.interface';
 import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 
 describe('SuperheroApiService', () => {
    let service: SuperheroApiService;
    let httpTesting: HttpTestingController;
+   const API_URL: string = 'http://localhost:3000/superheroes';
 
    beforeEach(() => {
       TestBed.configureTestingModule({
@@ -37,7 +38,7 @@ describe('SuperheroApiService', () => {
             expect(heroes.length).toBe(3);
          });
 
-         const req = httpTesting.expectOne('http://localhost:3000/superheroes'); // intercepts the request before a real request is made.
+         const req = httpTesting.expectOne(API_URL); // intercepts the request before a real request is made.
          expect(req.request.method).toBe('GET');
          req.flush(fakeHeroes); // simulates the response from server using fake data.
       });
@@ -51,7 +52,7 @@ describe('SuperheroApiService', () => {
             expect(hero).toEqual(fakeHero);
          });
 
-         const req = httpTesting.expectOne('http://localhost:3000/superheroes/1');
+         const req = httpTesting.expectOne(`${API_URL}/1`);
          expect(req.request.method).toBe('GET');
          req.flush(fakeHero);
       });
@@ -68,11 +69,72 @@ describe('SuperheroApiService', () => {
             },
          });
 
-         const req = httpTesting.expectOne(`http://localhost:3000/superheroes/${nonExistingHeroId}`);
+         const req = httpTesting.expectOne(`${API_URL}/${nonExistingHeroId}`);
          expect(req.request.method).toBe('GET');
          req.flush('Not Found', { status: 404, statusText: 'Not Found' });
 
          expect(service.errorMessage()).toBe('Not Found. The resource you are looking for does not exist.');
+      });
+   });
+
+   describe('addHero()', () => {
+      it('should add a superhero', () => {
+         const newHero: Superhero = {
+            id: 100,
+            name: 'New Superhero',
+            realName: 'New Superhero real name',
+            biography: 'Billionaire philanthropist who fights crime in Gotham City.',
+            powers: ['Martial Arts', 'Stealth', 'High Intelligence', 'Gadgets'],
+            universe: Universe.Dc,
+            firstAppearance: 'Detective Comics #27',
+            team: 'Justice League',
+            aliases: ['The Dark Knight'],
+            images: {
+               xs: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/70-batman.jpg',
+               sm: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/70-batman.jpg',
+               md: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/70-batman.jpg',
+               lg: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/70-batman.jpg',
+            },
+            updatedAt: null,
+            deletedAt: null,
+         };
+
+         service.addHero(newHero).subscribe((hero) => {
+            expect(hero).toEqual(newHero);
+         });
+
+         const postRequest = httpTesting.expectOne(API_URL);
+         expect(postRequest.request.method).toBe('POST');
+         postRequest.flush(newHero);
+
+         // refresh list after POST:
+         const getRequest = httpTesting.expectOne(API_URL);
+         expect(getRequest.request.method).toBe('GET');
+         getRequest.flush([newHero]);
+      });
+
+      it('should return an error when required fields are missing', () => {
+         const heroWithoutUniverse: Superhero = {
+            name: 'new hero name',
+            realName: 'new hero real name',
+            powers: ['power1', 'power2'],
+            // universe: Universe.Dc,
+         } as Superhero;
+
+         service.addHero(heroWithoutUniverse).subscribe({
+            next: () => fail('Expected an error, but got a response'),
+            error: (error) => {
+               expect(error instanceof HttpErrorResponse).toBeTrue();
+               expect(error.status).toBe(400);
+               expect(error.statusText).toBe('Bad Request');
+            },
+         });
+
+         const req = httpTesting.expectOne(API_URL);
+         expect(req.request.method).toBe('POST');
+         expect(req.request.body).toEqual(heroWithoutUniverse);
+
+         req.flush({ message: 'Missing required fields' }, { status: 400, statusText: 'Bad Request' });
       });
    });
 });
