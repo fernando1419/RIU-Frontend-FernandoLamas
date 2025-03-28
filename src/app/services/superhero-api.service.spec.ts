@@ -152,9 +152,9 @@ describe('SuperheroApiService', () => {
             expect(hero).toEqual(updatedHero);
          });
 
-         const postRequest = httpTesting.expectOne(`${API_URL}/${updatedHero.id}`);
-         expect(postRequest.request.method).toBe('PATCH');
-         postRequest.flush(updatedHero);
+         const patchRequest = httpTesting.expectOne(`${API_URL}/${updatedHero.id}`);
+         expect(patchRequest.request.method).toBe('PATCH');
+         patchRequest.flush(updatedHero);
 
          const getRequest = httpTesting.expectOne(API_URL);
          expect(getRequest.request.method).toBe('GET');
@@ -184,6 +184,47 @@ describe('SuperheroApiService', () => {
          expect(req.request.body).toEqual(heroWithoutUniverse);
 
          req.flush({ message: 'Missing required fields' }, { status: 400, statusText: 'Bad Request' });
+      });
+   });
+
+   describe('deleteHero()', () => {
+      it('should delete a superhero', () => {
+         const heroId: number = 10;
+
+         const updatedHeroes = [ // missing the deleted hero with id = 10
+            { id: 7, name: 'Superman', realName: 'Clark Kent' },
+            { id: 8, name: 'Batman', realName: 'Bruce Wayne' },
+            { id: 9, name: 'Robin', realName: 'Mark London' },
+         ] as Superhero[];
+
+         service.deleteHero(heroId).subscribe(() => {
+            expect(true).toBeTrue();
+         });
+
+         const deleteRequest = httpTesting.expectOne(`${API_URL}/${heroId}`);
+         expect(deleteRequest.request.method).toBe('DELETE');
+         deleteRequest.flush(null);
+
+         const getRequest = httpTesting.expectOne(API_URL);
+         expect(getRequest.request.method).toBe('GET');
+         getRequest.flush(updatedHeroes);
+      });
+
+      it('should return an error if a superhero cannot be deleted', () => {
+         const heroId = 9999; // unExisting hero in DB.
+         const errorMessage = 'Hero not found';
+
+         service.deleteHero(heroId).subscribe({
+            next: () => fail('Expected an error, but got a response'),
+            error: (error) => {
+               expect(error.status).toBe(404);
+               expect(error.statusText).toBe('Not Found');
+            },
+         });
+
+         const req = httpTesting.expectOne(`${API_URL}/${heroId}`);
+         expect(req.request.method).toBe('DELETE');
+         req.flush({ message: errorMessage }, { status: 404, statusText: 'Not Found' });
       });
    });
 });

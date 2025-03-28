@@ -247,28 +247,6 @@
       "id": "10"
     },
     {
-      "id": "11",
-      "name": "updated hero name",
-      "realName": "updated hero real name",
-      "biography": "Hal Jordan is a test pilot who becomes the Green Lantern, using the power of a magical ring to fight evil across the universe.",
-      "powers": [],
-      "universe": "DC",
-      "firstAppearance": "Showcase #22",
-      "team": "Justice League",
-      "aliases": [
-        "The Emerald Crusader",
-        "Green Lantern"
-      ],
-      "images": {
-        "xs": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/306-hal-jordan.jpg",
-        "sm": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/306-hal-jordan.jpg",
-        "md": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/306-hal-jordan.jpg",
-        "lg": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/306-hal-jordan.jpg"
-      },
-      "updatedAt": null,
-      "deletedAt": null
-    },
-    {
       "id": "12",
       "name": "Aquaman",
       "realName": "Arthur Curry",
@@ -1426,70 +1404,6 @@
       },
       "updatedAt": null,
       "deletedAt": null
-    },
-    {
-      "id": "101"
-    },
-    {
-      "id": "101"
-    },
-    {
-      "id": "101"
-    },
-    {
-      "id": "101"
-    },
-    {
-      "id": "7fa7",
-      "name": "new superhero!!"
-    },
-    {
-      "id": "650b",
-      "name": "new superhero!!"
-    },
-    {
-      "id": "bc62",
-      "name": "new superhero!!"
-    },
-    {
-      "name": "new hero name",
-      "realName": "new hero real name",
-      "powers": [
-        "power1",
-        "power2"
-      ],
-      "universe": "DC",
-      "id": "Jj0u87e"
-    },
-    {
-      "name": "new hero name",
-      "realName": "new hero real name",
-      "powers": [
-        "power1",
-        "power2"
-      ],
-      "universe": "DC",
-      "id": "6EsqMHI"
-    },
-    {
-      "name": "new hero name",
-      "realName": "new hero real name",
-      "powers": [
-        "power1",
-        "power2"
-      ],
-      "universe": "DC",
-      "id": "5GDt7HD"
-    },
-    {
-      "name": "new hero name",
-      "realName": "new hero real name",
-      "powers": [
-        "power1",
-        "power2"
-      ],
-      "universe": "DC",
-      "id": "KYRN18p"
     }
   ]
 }

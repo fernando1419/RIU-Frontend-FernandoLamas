@@ -43,6 +43,13 @@ export class SuperheroApiService {
       );
    }
 
+   deleteHero(id: number): Observable<void> {
+      return this.http.delete<void>(`${API_URL}/${id}`).pipe(
+         catchError((error) => this.handleError(error)),
+         tap(() => this.refreshHeroes()),
+      );
+   }
+
    private refreshHeroes() {
       this.getAllHeroes().subscribe();
    }
