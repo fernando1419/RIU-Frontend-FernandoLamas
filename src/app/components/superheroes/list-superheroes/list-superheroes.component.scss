@@ -1,0 +1,79 @@
+.table-container {
+   width: 100%;
+   overflow-x: auto;
+}
+
+.responsive-table {
+   width: 100%;
+   min-width: 600px;
+   white-space: nowrap;
+}
+
+.mat-mdc-header-cell {
+   background-color: #3f51b5 !important;
+   color: white;
+   // text-align: center;
+}
+
+.mat-mdc-cell {
+   background-color: white;
+   // text-align: center;
+   // justify-content: center;
+}
+
+.mat-mdc-paginator,
+.mat-mdc-paginator-container,
+.mat-mdc-paginator-outer-container {
+   background-color: rgba(240, 243, 235, 0.77) !important;
+}
+
+.red-icon {
+   color: red;
+}
+
+.mr-2 {
+   margin-right: 0.5rem;
+}
+
+.mr-4 {
+   margin-right: 1rem;
+}
+
+.custom-chip {
+   background-color: #d9debf !important;
+}
+
+.custom-chip:hover {
+   background-color: #809030;
+}
+
+th,
+td {
+   padding: 8px 16px;
+}
+
+@media (max-width: 768px) {
+
+   th,
+   td {
+      padding: 4px 8px;
+      font-size: 14px;
+   }
+
+   button {
+      font-size: 12px;
+      padding: 4px;
+   }
+}
+
+@media (max-width: 480px) {
+
+   th,
+   td {
+      font-size: 12px;
+   }
+
+   .responsive-table {
+      min-width: 100%;
+   }
+}
