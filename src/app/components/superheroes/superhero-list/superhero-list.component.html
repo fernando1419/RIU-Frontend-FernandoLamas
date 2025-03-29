@@ -1,3 +1,16 @@
+<div class="toolbar">
+   <!-- Search Bar -->
+   <mat-form-field appearance="outline" class="search-bar">
+      <mat-label>Search Hero</mat-label>
+      <input matInput placeholder="Type the name of the hero">
+      <mat-icon matSuffix>search</mat-icon>
+   </mat-form-field>
+
+   <button mat-fab aria-label="Adds a superhero" color="primary" style="margin: 0px; padding: 0px;">
+      <mat-icon>add</mat-icon>
+   </button>
+</div>
+
 <div class="table-container">
    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 responsive-table">
 
@@ -23,7 +36,7 @@
          <th mat-header-cell *matHeaderCellDef> Powers </th>
          <td mat-cell *matCellDef="let hero">
             <mat-chip-set aria-label="Powers List">
-               @for (power of hero.powers; track power.name) {
+               @for (power of hero.powers; track $index ) { <!-- TODO: Replace $index with id -->
                <mat-chip class="custom-chip"> {{ power }} </mat-chip>
                } @empty {
                -
