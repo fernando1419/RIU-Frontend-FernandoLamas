@@ -2,9 +2,16 @@
    <!-- Search Bar -->
    <mat-form-field appearance="outline" class="search-bar">
       <mat-label>Search Hero</mat-label>
-      <input matInput placeholder="Type the name of the hero">
-      <mat-icon matSuffix>search</mat-icon>
+      <mat-icon matPrefix class="disabled-icon ml-2">search</mat-icon>
+      <input matInput [(ngModel)]="filterValue" (ngModelChange)="filterHeroes()"
+         placeholder="Type the name of the hero">
+      @if (filterValue) {
+      <button mat-icon-button matSuffix (click)="clearFilter()" class="mr-4">
+         <mat-icon>close</mat-icon>
+      </button>
+      }
    </mat-form-field>
+
 
    <button mat-fab aria-label="Adds a superhero" color="primary" style="margin: 0px; padding: 0px;">
       <mat-icon>add</mat-icon>

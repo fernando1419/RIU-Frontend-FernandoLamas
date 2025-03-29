@@ -10,6 +10,14 @@
    margin: 0;
 }
 
+.search-bar {
+   .disabled-icon {
+      color: rgba(0, 0, 0, 0.38);
+      /* Material disabled color */
+      // cursor: not-allowed;
+   }
+}
+
 .mat-mdc-form-field {
    margin: 0;
 }
@@ -58,6 +66,10 @@
 
 .mr-4 {
    margin-right: 1rem;
+}
+
+.ml-2 {
+   margin-left: 0.5rem;
 }
 
 .custom-chip {

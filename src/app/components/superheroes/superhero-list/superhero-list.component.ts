@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -14,7 +15,7 @@ import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 @Component({
    selector: 'app-superhero-list',
    standalone: true,
-   imports: [MatTableModule, MatPaginator, MatButtonModule, MatIconModule, MatChipsModule, MatFormFieldModule, MatInputModule],
+   imports: [MatTableModule, MatPaginator, MatButtonModule, MatIconModule, MatChipsModule, MatFormFieldModule, MatInputModule, FormsModule],
    templateUrl: './superhero-list.component.html',
    styleUrl: './superhero-list.component.scss',
 })
@@ -23,9 +24,11 @@ export class SuperheroListComponent implements OnInit, AfterViewInit {
 
    dataSource = new MatTableDataSource<Superhero>([]);
 
-   @ViewChild(MatPaginator) paginator: MatPaginator | null = null;
-
    superheroApiService = inject(SuperheroApiService);
+
+   protected filterValue: string = '';
+
+   @ViewChild(MatPaginator) paginator: MatPaginator | null = null;
 
    ngOnInit(): void {
       this.fetchSuperheroes();
@@ -40,9 +43,24 @@ export class SuperheroListComponent implements OnInit, AfterViewInit {
 
    fetchSuperheroes(): void {
       this.superheroApiService.getAllHeroes().subscribe(data => {
-         console.log(data);
          this.dataSource.data = data;
          this.dataSource.paginator = this.paginator;
+
+         this.dataSource.filterPredicate = (heroes: Superhero, filter: string) =>
+            heroes.name.toLowerCase().includes(filter); // filter by hero's name.
       });
+   }
+
+   protected filterHeroes(): void {
+      this.dataSource.filter = this.filterValue.trim().toLowerCase();
+
+      if (this.dataSource.paginator) {
+         this.dataSource.paginator.firstPage();
+      }
+   }
+
+   protected clearFilter(): void {
+      this.filterValue = '';
+      this.filterHeroes();
    }
 }
