@@ -4,6 +4,7 @@ import { MatButton } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { Router } from '@angular/router';
 import { Superhero, Universe } from 'src/app/models/superhero.interface';
 
 @Component({
@@ -32,7 +33,7 @@ export class SuperheroPartialFormComponent implements OnChanges {
    @Input() heroData: Superhero | null = {} as Superhero;
    @Output() save: EventEmitter<Superhero> = new EventEmitter<Superhero>();
 
-   constructor(private fb: FormBuilder) {
+   constructor(private fb: FormBuilder, private router: Router) {
       this.superheroForm = this._createForm();
    }
 
@@ -63,8 +64,7 @@ export class SuperheroPartialFormComponent implements OnChanges {
 
    protected goToHeroesList(): void {
       this.superheroForm.reset();
-      //   this.router.navigate(['/heroes']);
-      location.href = '/';
+      this.router.navigate(['/superheroes']);
    }
 
    onSubmit(): void {

@@ -3,11 +3,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
 
-import { SuperheroListComponent } from 'src/app/components/superheroes/superhero-list/superhero-list.component';
+import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 @Component({
    selector: 'app-root',
    standalone: true,
-   imports: [RouterOutlet, MatButtonModule, MatToolbarModule, SuperheroListComponent],
+   imports: [RouterOutlet, MatButtonModule, MatToolbarModule, NavbarComponent],
    templateUrl: './app.component.html',
    styleUrl: './app.component.scss',
 })

@@ -13,7 +13,7 @@
    </mat-form-field>
 
 
-   <button mat-fab aria-label="Adds a superhero" color="primary" class="add-button">
+   <button mat-fab aria-label="Adds a superhero" color="primary" class="add-button" routerLink="/superheroes/add">
       <mat-icon>add</mat-icon>
    </button>
 </div>
@@ -71,7 +71,8 @@
       <ng-container matColumnDef="actions">
          <th mat-header-cell *matHeaderCellDef> Actions </th>
          <td mat-cell *matCellDef="let hero">
-            <button mat-mini-fab aria-label="Edits a superhero" color="primary" class="mr-4">
+            <button mat-mini-fab aria-label="Edits a superhero" color="primary" class="mr-4"
+               [routerLink]="['/superheroes/edit', hero.id]">
                <mat-icon>edit</mat-icon>
             </button>
             <button mat-mini-fab aria-label="Deletes a superhero" color="primary" (click)="deleteHero(hero)">

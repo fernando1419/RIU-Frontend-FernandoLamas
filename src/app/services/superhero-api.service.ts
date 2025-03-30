@@ -23,7 +23,7 @@ export class SuperheroApiService {
       );
    }
 
-   getHeroById(id: number): Observable<Superhero> {
+   getHeroById(id: number | string): Observable<Superhero> {
       return this.http.get<Superhero>(`${API_URL}/${id}`).pipe(
          catchError(error => this.handleError(error)),
       );
@@ -36,14 +36,14 @@ export class SuperheroApiService {
       );
    }
 
-   updateHero(id: number, hero: Superhero): Observable<Superhero> {
+   updateHero(id: number | string, hero: Superhero): Observable<Superhero> {
       return this.http.patch<Superhero>(`${API_URL}/${id}`, hero).pipe(
          catchError((error) => this.handleError(error)),
          tap(() => this.refreshHeroes()),
       );
    }
 
-   deleteHero(id: number): Observable<void> {
+   deleteHero(id: number | string): Observable<void> {
       return this.http.delete<void>(`${API_URL}/${id}`).pipe(
          catchError((error) => this.handleError(error)),
          tap(() => this.refreshHeroes()),

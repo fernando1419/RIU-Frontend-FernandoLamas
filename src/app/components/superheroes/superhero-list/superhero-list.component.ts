@@ -11,6 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { ConfirmDialogComponent } from 'src/app/components/shared/confirm-dialog/confirm-dialog.component';
 
+import { RouterLink } from '@angular/router';
 import { Superhero } from 'src/app/models/superhero.interface';
 import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 
@@ -26,6 +27,7 @@ import { SuperheroApiService } from 'src/app/services/superhero-api.service';
       MatFormFieldModule,
       MatInputModule,
       FormsModule,
+      RouterLink,
    ],
    templateUrl: './superhero-list.component.html',
    styleUrl: './superhero-list.component.scss',

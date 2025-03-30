@@ -3,7 +3,7 @@ export interface Result {
 }
 
 export interface Superhero {
-   id: number;
+   id: number | string; // because json-server generates ids as strings
    name: string;
    realName: string;
    powers: string[];

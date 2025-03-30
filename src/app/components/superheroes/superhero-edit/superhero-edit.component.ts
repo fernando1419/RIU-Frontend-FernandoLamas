@@ -1,4 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, computed, effect, inject } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SuperheroPartialFormComponent } from 'src/app/components/superheroes/superhero-partial-form/superhero-partial-form.component';
 import { Superhero } from 'src/app/models/superhero.interface';
 import { SuperheroApiService } from 'src/app/services/superhero-api.service';
@@ -10,27 +12,51 @@ import { SuperheroApiService } from 'src/app/services/superhero-api.service';
    templateUrl: './superhero-edit.component.html',
    styleUrl: './superhero-edit.component.scss',
 })
-export class SuperheroEditComponent implements OnInit {
+export class SuperheroEditComponent {
+   // protected heroId: number | string | null = null;
+   heroId = computed(() => this.route.snapshot.paramMap.get('id')); // because json-server generates ids like: "1aDfa"
    protected heroDataFromDB: Superhero | null = null;
 
-   superheroApiService = inject(SuperheroApiService);
+   private route = inject(ActivatedRoute);
+   private router = inject(Router);
+   snackBar: MatSnackBar = inject(MatSnackBar);
 
-   ngOnInit(): void {
-      const heroId = 10; // TODO: get hero id from route or heroesList
-      if (heroId) {
-         this.superheroApiService.getHeroById(heroId).subscribe((hero) => {
-            this.heroDataFromDB = hero;
-            // console.log(this.heroDataFromDB);
-         });
-      }
+   private superheroApiService = inject(SuperheroApiService);
+
+   constructor() {
+      effect(() => {
+         const id = this.heroId();
+         if (id) {
+            console.log({ id });
+            this.superheroApiService.getHeroById(id).subscribe({
+               next: (hero) => this.heroDataFromDB = hero,
+               error: (err) => console.error('Error fetching hero:', err),
+            });
+         }
+      });
    }
 
    updateHero(editedHeroData: Superhero) {
-      // const heroId = this.route.snapshot.paramMap.get('id'); // TODO: get hero id from route or list
       if (this.heroDataFromDB) {
-         this.superheroApiService.updateHero(this.heroDataFromDB.id, editedHeroData).subscribe((result) => {
-            console.log('Hero updated:', result);
-            // this.router.navigate(['/heroes']);
+         this.superheroApiService.updateHero(this.heroDataFromDB.id, editedHeroData).subscribe({
+            next: () => {
+               this.snackBar.open(`Hero edited successfully!`, 'Close', {
+                  duration: 5000,
+                  horizontalPosition: 'end',
+                  verticalPosition: 'bottom',
+                  panelClass: ['success-snackbar'],
+               });
+               this.router.navigate(['/superheroes']); // update successful
+            },
+            error: (err) => {
+               this.snackBar.open('Error when trying to edit hero', 'close', {
+                  duration: 5000,
+                  horizontalPosition: 'end',
+                  verticalPosition: 'bottom',
+                  panelClass: ['error-snackbar'],
+               });
+               console.error('Error updating hero:', err);
+            },
          });
       }
    }

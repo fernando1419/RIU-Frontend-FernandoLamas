@@ -111,7 +111,7 @@
     {
       "id": "5",
       "name": "Batman",
-      "realName": "Bruce Wayne",
+      "realName": "Bruce Wayne Kpo!",
       "biography": "Bruce Wayne is a billionaire playboy and philanthropist who fights crime as the Dark Knight in Gotham City.",
       "powers": [
         "Peak human physical condition",
@@ -120,7 +120,7 @@
         "High-tech gadgets"
       ],
       "universe": "DC",
-      "firstAppearance": "Detective Comics #27",
+      "firstAppearance": "Detective Comics #27!!!",
       "team": "Justice League",
       "aliases": [
         "The Dark Knight",
@@ -250,9 +250,9 @@
       ],
       "universe": "DC",
       "id": "10",
-      "biography": "asdfasdf",
+      "biography": "awesome biography!!!!! congrats!!!",
       "firstAppearance": "asdfasdf",
-      "team": "asdf",
+      "team": "new team here!",
       "aliases": "asdf",
       "images": {
         "xs": "asdf",
@@ -1517,48 +1517,6 @@
         "lg": ""
       },
       "id": "xG97kbc"
-    },
-    {
-      "name": "asdf",
-      "realName": "asdf",
-      "powers": [
-        "Wall-crawling"
-      ],
-      "universe": "asdf",
-      "biography": "asdf",
-      "firstAppearance": "asdf",
-      "team": "sdf",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "ld4Dfzv"
-    },
-    {
-      "name": "Julio",
-      "realName": "Acosta, Julio Ocampo",
-      "powers": [
-        "Web-slinging",
-        "Wall-crawling",
-        "Super strength",
-        "Spider sense",
-        "Flight"
-      ],
-      "universe": "Marvel",
-      "biography": "",
-      "firstAppearance": "",
-      "team": "",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "rIe9gQC"
     }
   ]
 }

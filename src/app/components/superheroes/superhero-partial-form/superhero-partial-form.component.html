@@ -1,4 +1,4 @@
-<form [formGroup]="superheroForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="superheroForm" (ngSubmit)="onSubmit()" class="form-container">
 
    <h2 class="form-title">{{ formTitle }}</h2>
 
@@ -67,7 +67,8 @@
       </mat-form-field>
    </div>
 
-   <!-- FormGroup for Images Field (URLs) -->
+   <!-- FormGroup for Images Field (URLs), show only when editing -->
+   @if (heroData?.id) {
    <div formGroupName="images" class="form-grid">
       <mat-form-field appearance="outline">
          <mat-label>Image XS</mat-label>
@@ -89,6 +90,7 @@
          <input matInput formControlName="lg" placeholder="Enter a valid hero image url for LG dimension">
       </mat-form-field>
    </div>
+   }
 
    <div class="form-buttons">
       <button mat-raised-button color="accent" type="button" (click)="goToHeroesList()"> Go back to Superheroes list
