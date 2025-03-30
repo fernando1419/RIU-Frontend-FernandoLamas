@@ -1,0 +1,102 @@
+<form [formGroup]="superheroForm" (ngSubmit)="onSubmit()">
+
+   <h2 class="form-title">Complete the information about the new Superhero</h2>
+
+   <div class="form-grid">
+      <!-- Name Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Name</mat-label>
+         <input matInput formControlName="name" required>
+         @if (superheroForm.get('name')?.hasError('required')) { <mat-error> Name is required </mat-error> }
+      </mat-form-field>
+
+      <!-- Real Name Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Real Name</mat-label>
+         <input matInput formControlName="realName" required>
+         @if (superheroForm.get('realName')?.hasError('required')) { <mat-error> Real Name is required </mat-error> }
+      </mat-form-field>
+
+      <!-- Powers Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Powers</mat-label>
+         <mat-select formControlName="powers" multiple required>
+            @for (power of powersList; track $index) {
+            <mat-option [value]="power">{{ power }}</mat-option>
+            }
+         </mat-select>
+         @if (superheroForm.get('powers')?.hasError('required')) {
+         <mat-error> At least one power must be selected </mat-error>
+         }
+      </mat-form-field>
+
+      <!-- Universe Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Universe</mat-label>
+         <mat-select formControlName="universe" required>
+            @for (universe of universeList; track $index) {
+            <mat-option [value]="universe">{{ universe }}</mat-option>
+            }
+         </mat-select>
+         @if (superheroForm.get('universe')?.hasError('required')) { <mat-error> Universe is required </mat-error> }
+      </mat-form-field>
+
+      <!-- Biography Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Biography</mat-label>
+         <textarea matInput formControlName="biography" rows="2"></textarea>
+      </mat-form-field>
+
+
+      <!-- First Appearance Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>First Appearance</mat-label>
+         <input matInput formControlName="firstAppearance">
+      </mat-form-field>
+
+      <!-- Team Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Team</mat-label>
+         <input matInput formControlName="team">
+      </mat-form-field>
+
+      <!-- Aliases Field -->
+      <mat-form-field appearance="outline">
+         <mat-label>Aliases</mat-label>
+         <input matInput formControlName="aliases" placeholder="Separate aliases with commas">
+      </mat-form-field>
+   </div>
+
+   <!-- FormGroup for Images Field (URLs) -->
+   <div formGroupName="images" class="form-grid">
+      <mat-form-field appearance="outline">
+         <mat-label>Image XS</mat-label>
+         <input matInput formControlName="xs" placeholder="Enter a valid hero image url for XS dimension">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+         <mat-label>Image SM</mat-label>
+         <input matInput formControlName="sm" placeholder="Enter a valid hero image url for SM dimension">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+         <mat-label>Image MD</mat-label>
+         <input matInput formControlName="md" placeholder="Enter a valid hero image url for MD dimension">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+         <mat-label>Image LG</mat-label>
+         <input matInput formControlName="lg" placeholder="Enter a valid hero image url for LG dimension">
+      </mat-form-field>
+   </div>
+
+   <div class="form-buttons">
+      <button mat-raised-button color="accent" type="button" (click)="goToHeroesList()"> Go back to Superheroes list
+      </button>
+      <div>
+         <button mat-raised-button color="primary" type="submit" class="submit-button"> Add Superhero </button>
+         <button mat-raised-button color="warn" type="reset"> Clear </button>
+      </div>
+   </div>
+
+</form>
