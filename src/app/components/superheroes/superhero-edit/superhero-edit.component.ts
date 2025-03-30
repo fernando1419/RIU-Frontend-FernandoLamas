@@ -27,7 +27,6 @@ export class SuperheroEditComponent {
       effect(() => {
          const id = this.heroId();
          if (id) {
-            console.log({ id });
             this.superheroApiService.getHeroById(id).subscribe({
                next: (hero) => this.heroDataFromDB = hero,
                error: (err) => console.error('Error fetching hero:', err),

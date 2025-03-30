@@ -6,7 +6,7 @@
       <!-- Name Field -->
       <mat-form-field appearance="outline">
          <mat-label>Name</mat-label>
-         <input matInput formControlName="name" required>
+         <input matInput formControlName="name" required appUppercase>
          @if (superheroForm.get('name')?.hasError('required')) { <mat-error> Name is required </mat-error> }
       </mat-form-field>
 

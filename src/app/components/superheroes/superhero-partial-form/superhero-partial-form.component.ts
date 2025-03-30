@@ -5,12 +5,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Router } from '@angular/router';
+import { UppercaseDirective } from 'src/app/directives/uppercase.directive';
 import { Superhero, Universe } from 'src/app/models/superhero.interface';
 
 @Component({
    selector: 'app-superhero-partial-form',
    standalone: true,
-   imports: [MatFormFieldModule, MatSelectModule, MatInputModule, ReactiveFormsModule, MatButton],
+   imports: [MatFormFieldModule, MatSelectModule, MatInputModule, ReactiveFormsModule, MatButton, UppercaseDirective],
    templateUrl: './superhero-partial-form.component.html',
    styleUrl: './superhero-partial-form.component.scss',
 })
