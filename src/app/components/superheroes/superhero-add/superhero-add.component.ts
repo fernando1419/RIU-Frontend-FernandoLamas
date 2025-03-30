@@ -1,73 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { MatButton } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-
-import { Universe } from 'src/app/models/superhero.interface';
+import { Component, inject } from '@angular/core';
+import { SuperheroPartialFormComponent } from 'src/app/components/superheroes/superhero-partial-form/superhero-partial-form.component';
+import { Superhero } from 'src/app/models/superhero.interface';
 import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 
 @Component({
    selector: 'app-superhero-add',
    standalone: true,
-   imports: [MatFormFieldModule, MatSelectModule, MatInputModule, ReactiveFormsModule, MatButton],
+   imports: [SuperheroPartialFormComponent],
    templateUrl: './superhero-add.component.html',
    styleUrls: ['./superhero-add.component.scss'],
 })
-export class SuperheroAddComponent implements OnInit {
-   superheroForm!: FormGroup;
-   universeList: Universe[] = [Universe.Dc, Universe.Marvel];
-   powersList: string[] = [ // TODO: remove asap!
-      'Web-slinging',
-      'Wall-crawling',
-      'Super strength',
-      'Spider sense',
-      'Flight',
-      'Laser vision',
-      'Invisibility',
-      'Teleportation',
-      'Super speed',
-   ];
+export class SuperheroAddComponent {
+   superheroApiService = inject(SuperheroApiService);
 
-   constructor(private fb: FormBuilder, private superheroApiService: SuperheroApiService) { }
-
-   private _createForm(): FormGroup {
-      return this.fb.group({
-         name: ['', Validators.required],
-         realName: ['', Validators.required],
-         powers: [[], Validators.required],
-         universe: ['', Validators.required],
-         biography: [''],
-         firstAppearance: [''],
-         team: [''],
-         aliases: [''],
-         images: this.fb.group({
-            xs: [''],
-            sm: [''],
-            md: [''],
-            lg: [''],
-         }),
+   saveHero(newHeroData: Superhero) {
+      console.log('Form submitted', newHeroData);
+      this.superheroApiService.addHero(newHeroData).subscribe(response => {
+         console.log('Hero added:', response);
+         // TODO: redirect to heroes list once routes are done.
       });
-   }
-
-   ngOnInit(): void {
-      this.superheroForm = this._createForm();
-   }
-
-   protected goToHeroesList(): void {
-      this.superheroForm.reset();
-      //   this.router.navigate(['/heroes']);
-      location.href = '/';
-   }
-
-   onSubmit() {
-      if (this.superheroForm.valid) {
-         const newSuperhero = this.superheroForm.value;
-         this.superheroApiService.addHero(newSuperhero).subscribe(response => {
-            console.log('Hero added:', response);
-            // TODO: redirect to heroes list
-         });
-      }
    }
 }

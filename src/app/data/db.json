@@ -242,9 +242,24 @@
     {
       "name": "updated hero name",
       "realName": "updated hero real name",
-      "powers": [],
+      "powers": [
+        "Wall-crawling",
+        "Spider sense",
+        "Flight",
+        "Laser vision"
+      ],
       "universe": "DC",
-      "id": "10"
+      "id": "10",
+      "biography": "asdfasdf",
+      "firstAppearance": "asdfasdf",
+      "team": "asdf",
+      "aliases": "asdf",
+      "images": {
+        "xs": "asdf",
+        "sm": "asdf",
+        "md": "asdf",
+        "lg": "asdf"
+      }
     },
     {
       "id": "12",
