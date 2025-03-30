@@ -1404,6 +1404,28 @@
       },
       "updatedAt": null,
       "deletedAt": null
+    },
+    {
+      "name": "New Hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "weapon1",
+        "weapon2",
+        "weapon3"
+      ],
+      "universe": "DC",
+      "id": "m-HoQHO"
+    },
+    {
+      "name": "New Hero name",
+      "realName": "new hero real name",
+      "powers": [
+        "weapon1",
+        "weapon2",
+        "weapon3"
+      ],
+      "universe": "DC",
+      "id": "qYVRVaa"
     }
   ]
 }

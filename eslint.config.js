@@ -66,7 +66,7 @@ export default [
          "block-spacing": ["error", "always"],
          "eol-last": ["error", "always"],
          "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-         "lines-between-class-members": ["error", "always"],
+         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }], // blank lines between methods only, not between properties
          "no-mixed-spaces-and-tabs": "error",
          "padded-blocks": ["error", "never"],
          "space-in-parens": ["error", "never"],
