@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { heroEditGuard } from 'src/app/guards/hero-edit.guard';
 
 export const routes: Routes = [
    // { path: '', redirectTo: '/superheroes', pathMatch: 'full' },
@@ -13,6 +14,7 @@ export const routes: Routes = [
    {
       path: 'superheroes/edit/:id',
       loadComponent: () => import('src/app/components/superheroes/superhero-edit/superhero-edit.component').then(m => m.SuperheroEditComponent),
+      canActivate: [heroEditGuard],
    },
    {
       path: 'superheroes/:id',
