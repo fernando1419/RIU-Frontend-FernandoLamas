@@ -1,0 +1,27 @@
+.not-found-container {
+   text-align: center;
+   margin-top: 10%;
+}
+
+h1 {
+   font-size: 6rem;
+   color: red;
+}
+
+p {
+   font-size: 1.5rem;
+}
+
+.btn {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: white;
+   background: #007bff;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background: #0056b3;
+}

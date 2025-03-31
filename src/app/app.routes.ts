@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-   // { path: '', component: SuperheroListComponent },
-   { path: '', redirectTo: '/superheroes', pathMatch: 'full' },
+   // { path: '', redirectTo: '/superheroes', pathMatch: 'full' },
    {
       path: 'superheroes',
       loadComponent: () => import('src/app/components/superheroes/superhero-list/superhero-list.component').then(m => m.SuperheroListComponent),
@@ -23,6 +22,8 @@ export const routes: Routes = [
       path: 'about',
       loadComponent: () => import('src/app/pages/about/about.component').then(m => m.AboutComponent),
    },
-
-   { path: '**', redirectTo: '/' }, // 404
+   {
+      path: '**',
+      loadComponent: () => import('src/app/pages/not-found/not-found.component').then(m => m.NotFoundComponent),
+   }, // 🔥 404 not found.
 ];
