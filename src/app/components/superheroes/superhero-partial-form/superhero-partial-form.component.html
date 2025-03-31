@@ -13,7 +13,7 @@
       <!-- Real Name Field -->
       <mat-form-field appearance="outline">
          <mat-label>Real Name</mat-label>
-         <input matInput formControlName="realName" required>
+         <input matInput formControlName="realName" required appUppercase>
          @if (superheroForm.get('realName')?.hasError('required')) { <mat-error> Real Name is required </mat-error> }
       </mat-form-field>
 
@@ -57,7 +57,11 @@
       <!-- Team Field -->
       <mat-form-field appearance="outline">
          <mat-label>Team</mat-label>
-         <input matInput formControlName="team">
+         <mat-select formControlName="team">
+            @for (team of teamList; track $index) {
+            <mat-option [value]="team">{{ team }}</mat-option>
+            }
+         </mat-select>
       </mat-form-field>
 
       <!-- Aliases Field -->

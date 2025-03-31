@@ -1399,37 +1399,17 @@
       "deletedAt": null
     },
     {
-      "name": "New Hero name",
-      "realName": "new hero real name",
+      "name": "TESTING HERO ",
+      "realName": "TESTING HERO NAME ",
       "powers": [
-        "weapon1",
-        "weapon2",
-        "weapon3"
+        "Wall-crawling",
+        "Super strength",
+        "Spider sense"
       ],
-      "universe": "DC",
-      "id": "m-HoQHO"
-    },
-    {
-      "name": "New Hero name",
-      "realName": "new hero real name",
-      "powers": [
-        "weapon1",
-        "weapon2",
-        "weapon3"
-      ],
-      "universe": "DC",
-      "id": "qYVRVaa"
-    },
-    {
-      "name": "asdf",
-      "realName": "asdf",
-      "powers": [
-        "Wall-crawling"
-      ],
-      "universe": "asdf",
-      "biography": "asdf",
-      "firstAppearance": "asdf",
-      "team": "sdf",
+      "universe": "Marvel",
+      "biography": "asdfasdf",
+      "firstAppearance": "asdfasdf",
+      "team": "Birds of Prey",
       "aliases": "",
       "images": {
         "xs": "",
@@ -1437,64 +1417,7 @@
         "md": "",
         "lg": ""
       },
-      "id": "rt9uOCy"
-    },
-    {
-      "name": "asdf",
-      "realName": "asdf",
-      "powers": [
-        "Wall-crawling"
-      ],
-      "universe": "asdf",
-      "biography": "asdf",
-      "firstAppearance": "asdf",
-      "team": "sdf",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "CrVsb7l"
-    },
-    {
-      "name": "asdf",
-      "realName": "asdf",
-      "powers": [
-        "Wall-crawling"
-      ],
-      "universe": "asdf",
-      "biography": "asdf",
-      "firstAppearance": "asdf",
-      "team": "sdf",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "soHyGRl"
-    },
-    {
-      "name": "asdf",
-      "realName": "asdf",
-      "powers": [
-        "Wall-crawling"
-      ],
-      "universe": "asdf",
-      "biography": "asdf",
-      "firstAppearance": "asdf",
-      "team": "sdf",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "xG97kbc"
+      "id": "7J2ogIB"
     }
   ]
 }

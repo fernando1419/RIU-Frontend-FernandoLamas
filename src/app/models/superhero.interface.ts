@@ -28,3 +28,17 @@ export enum Universe {
    Dc = 'DC',
    Marvel = 'Marvel',
 }
+
+export enum Team {
+   Avengers = 'Avengers',
+   BirdsOfPrey = 'Birds of Prey',
+   Defenders = 'Defenders',
+   FantasticFour = 'Fantastic Four',
+   JusticeLeague = 'Justice League',
+   JusticeSocietyOfAmerica = 'Justice Society of America',
+   None = 'None',
+   Solo = 'Solo',
+   TeenTitans = 'Teen Titans',
+   XForce = 'X-Force',
+   XMen = 'X-Men',
+}

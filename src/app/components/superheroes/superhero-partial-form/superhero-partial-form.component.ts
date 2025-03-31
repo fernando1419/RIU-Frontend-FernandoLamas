@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Router } from '@angular/router';
 import { UppercaseDirective } from 'src/app/directives/uppercase.directive';
-import { Superhero, Universe } from 'src/app/models/superhero.interface';
+import { Superhero, Team, Universe } from 'src/app/models/superhero.interface';
 
 @Component({
    selector: 'app-superhero-partial-form',
@@ -18,6 +18,8 @@ import { Superhero, Universe } from 'src/app/models/superhero.interface';
 export class SuperheroPartialFormComponent implements OnChanges {
    superheroForm!: FormGroup;
    universeList: Universe[] = [Universe.Dc, Universe.Marvel];
+   teamList: Team[] = Array.from(Object.values(Team));
+
    powersList: string[] = [ // TODO: remove asap!
       'Web-slinging',
       'Wall-crawling',
@@ -46,7 +48,7 @@ export class SuperheroPartialFormComponent implements OnChanges {
          universe: ['', Validators.required],
          biography: [''],
          firstAppearance: [''],
-         team: [''],
+         team: ['None'],
          aliases: [''],
          images: this.fb.group({
             xs: [''],
