@@ -19,5 +19,10 @@ export const routes: Routes = [
       path: 'superheroes/:id',
       loadComponent: () => import('src/app/components/superheroes/superhero-show/superhero-show.component').then(m => m.SuperheroShowComponent),
    },
+   {
+      path: 'about',
+      loadComponent: () => import('src/app/pages/about/about.component').then(m => m.AboutComponent),
+   },
+
    { path: '**', redirectTo: '/' }, // 404
 ];

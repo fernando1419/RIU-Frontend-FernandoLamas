@@ -11,3 +11,9 @@
    font-weight: bold;
    background-color: rgb(217, 219, 241) // text-decoration: underline;
 }
+
+.nav-links {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}

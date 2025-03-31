@@ -2,11 +2,11 @@
    <span class="logo">Superheroes App</span>
    <!-- <a mat-button routerLink="/superheroes" routerLinkActive="active-link" class="logo">Superheroes</a> -->
    <span class="spacer"></span>
-   <a mat-button routerLink="/superheroes" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-      List Superheroes
-   </a>
-   <a mat-button routerLink="/superheroes/add" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-      Add Superhero
-   </a>
-
+   <div class="nav-links">
+      <a mat-button routerLink="/superheroes" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+         List Superheroes
+      </a>
+      <a mat-button routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"> About
+      </a>
+   </div>
 </mat-toolbar>
