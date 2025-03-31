@@ -73,25 +73,5 @@ export class SuperheroPartialFormComponent implements OnChanges {
          this.save.emit(this.superheroForm.value);
       }
    }
-
-   clearForm(): void {
-      this.superheroForm.reset();
-      this.superheroForm.setValue({
-         name: '',
-         realName: '',
-         powers: '',
-         universe: '',
-         biography: '',
-         firstAppearance: '',
-         team: '',
-         aliases: '',
-         images: {
-            xs: '',
-            sm: '',
-            md: '',
-            lg: '',
-         },
-      });
-   }
 }
 
