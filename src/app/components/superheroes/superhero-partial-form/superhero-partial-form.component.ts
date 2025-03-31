@@ -71,7 +71,6 @@ export class SuperheroPartialFormComponent implements OnChanges {
    onSubmit(): void {
       if (this.superheroForm.valid) {
          this.save.emit(this.superheroForm.value);
-         console.log('Form submitted from partial!');
       }
    }
 

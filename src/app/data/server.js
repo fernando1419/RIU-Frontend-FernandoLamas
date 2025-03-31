@@ -8,9 +8,7 @@ server.use(bodyParser);
 server.use(middlewares);
 
 server.use((req, res, next) => {
-   const delay = 1000;
-   // eslint-disable-next-line no-undef
-   setTimeout(next, delay);
+   const delay = 300;
 
    if (req.method === 'POST' || req.method === 'PATCH') {
       const requiredFields = ['name', 'realName', 'powers', 'universe'];
@@ -22,7 +20,8 @@ server.use((req, res, next) => {
          });
       }
    }
-   next();
+   // eslint-disable-next-line no-undef
+   setTimeout(next, delay); // just to display loading indicator feature.
 });
 
 server.use(router);

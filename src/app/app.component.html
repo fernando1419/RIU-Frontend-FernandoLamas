@@ -1,4 +1,11 @@
 <main class="container">
    <app-navbar />
+   @if (loadingService.loading()) {
+   <div class="loading-overlay">
+      <div class="loading-modal">
+         <mat-spinner diameter="30" />
+      </div>
+   </div>
+   }
    <router-outlet />
 </main>

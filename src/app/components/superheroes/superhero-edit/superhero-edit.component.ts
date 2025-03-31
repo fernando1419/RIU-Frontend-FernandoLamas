@@ -32,7 +32,7 @@ export class SuperheroEditComponent {
                error: (err) => console.error('Error fetching hero:', err),
             });
          }
-      });
+      }, { allowSignalWrites: true });
    }
 
    updateHero(editedHeroData: Superhero) {

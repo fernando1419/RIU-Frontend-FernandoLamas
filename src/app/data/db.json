@@ -1517,6 +1517,27 @@
         "lg": ""
       },
       "id": "xG97kbc"
+    },
+    {
+      "name": "NUEVO",
+      "realName": "nuevo",
+      "powers": [
+        "Wall-crawling",
+        "Spider sense",
+        "Laser vision"
+      ],
+      "universe": "Marvel",
+      "biography": "",
+      "firstAppearance": "",
+      "team": "",
+      "aliases": "",
+      "images": {
+        "xs": "",
+        "sm": "",
+        "md": "",
+        "lg": ""
+      },
+      "id": "vSt-x5H"
     }
   ]
 }
