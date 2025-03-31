@@ -240,28 +240,6 @@
       "deletedAt": null
     },
     {
-      "name": "updated hero name",
-      "realName": "updated hero real name",
-      "powers": [
-        "Wall-crawling",
-        "Spider sense",
-        "Flight",
-        "Laser vision"
-      ],
-      "universe": "DC",
-      "id": "10",
-      "biography": "awesome biography!!!!! congrats!!!",
-      "firstAppearance": "asdfasdf",
-      "team": "new team here!",
-      "aliases": "asdf",
-      "images": {
-        "xs": "asdf",
-        "sm": "asdf",
-        "md": "asdf",
-        "lg": "asdf"
-      }
-    },
-    {
       "id": "12",
       "name": "Aquaman",
       "realName": "Arthur Curry",
@@ -1517,27 +1495,6 @@
         "lg": ""
       },
       "id": "xG97kbc"
-    },
-    {
-      "name": "NUEVO",
-      "realName": "nuevo",
-      "powers": [
-        "Wall-crawling",
-        "Spider sense",
-        "Laser vision"
-      ],
-      "universe": "Marvel",
-      "biography": "",
-      "firstAppearance": "",
-      "team": "",
-      "aliases": "",
-      "images": {
-        "xs": "",
-        "sm": "",
-        "md": "",
-        "lg": ""
-      },
-      "id": "vSt-x5H"
     }
   ]
 }

@@ -25,7 +25,7 @@ export class SuperheroEditComponent {
 
    constructor() {
       effect(() => {
-         const id = this.heroId();
+         const id = this.heroId(); // this needs { allowSignalWrites: true } to avoid NG0600 error.
          if (id) {
             this.superheroApiService.getHeroById(id).subscribe({
                next: (hero) => this.heroDataFromDB = hero,
