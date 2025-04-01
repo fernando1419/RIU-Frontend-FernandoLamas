@@ -3,23 +3,24 @@
    <mat-form-field appearance="outline" class="search-bar">
       <mat-label>Search Hero</mat-label>
       <mat-icon matPrefix class="disabled-icon ml-2">search</mat-icon>
-      <input matInput [(ngModel)]="filterValue" (ngModelChange)="filterHeroes()"
+      <input matInput [(ngModel)]="filterValue" (ngModelChange)="filterHeroes()" type="text" id="search-superhero-input"
          placeholder="Type the name of the hero">
       @if (filterValue) {
-      <button mat-icon-button matSuffix (click)="clearFilter()" class="mr-4">
+      <button mat-icon-button matSuffix (click)="clearFilter()" class="mr-4" id="clear-search-button">
          <mat-icon>close</mat-icon>
       </button>
       }
    </mat-form-field>
 
 
-   <button mat-fab aria-label="Adds a superhero" color="primary" class="add-button" routerLink="/superheroes/add">
+   <button mat-fab aria-label="Adds a superhero" color="primary" class="add-button" routerLink="/superheroes/add"
+      id="add-superhero-button">
       <mat-icon>add</mat-icon>
    </button>
 </div>
 
 <div class="table-container">
-   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 responsive-table">
+   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 responsive-table" id="superheroes-table">
 
       <ng-container matColumnDef="picture">
          <th mat-header-cell *matHeaderCellDef> Picture </th>

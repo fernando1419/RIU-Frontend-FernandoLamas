@@ -36,7 +36,7 @@ export class SuperheroListComponent implements OnInit, AfterViewInit {
    displayedColumns: string[] = ['picture', 'name', 'realName', 'powers', 'universe', 'firstAppearance', 'team', 'actions'];
    dataSource = new MatTableDataSource<Superhero>([]);
    superheroApiService = inject(SuperheroApiService);
-   protected filterValue: string = '';
+   filterValue: string = '';
 
    snackBar: MatSnackBar = inject(MatSnackBar);
    dialog: MatDialog = inject(MatDialog);
@@ -63,14 +63,14 @@ export class SuperheroListComponent implements OnInit, AfterViewInit {
       });
    }
 
-   protected filterHeroes(): void {
+   filterHeroes(): void {
       this.dataSource.filter = this.filterValue.trim().toLowerCase();
       if (this.dataSource.paginator) {
          this.dataSource.paginator.firstPage();
       }
    }
 
-   protected clearFilter(): void {
+   clearFilter(): void {
       this.filterValue = '';
       this.filterHeroes();
    }
