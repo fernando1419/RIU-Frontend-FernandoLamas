@@ -120,7 +120,7 @@
         "High-tech gadgets"
       ],
       "universe": "DC",
-      "firstAppearance": "Detective Comics #27!!!",
+      "firstAppearance": "Detective Comics #27, awesome!!!",
       "team": "Justice League",
       "aliases": [
         "The Dark Knight",
@@ -1418,6 +1418,26 @@
         "lg": ""
       },
       "id": "7J2ogIB"
+    },
+    {
+      "name": "TESTING ON PRODUCTION!!!!",
+      "realName": "TESTING ON PRODUCTION!!!!",
+      "powers": [
+        "Wall-crawling",
+        "Spider sense"
+      ],
+      "universe": "Marvel",
+      "biography": "",
+      "firstAppearance": "here!!!!!",
+      "team": "None",
+      "aliases": "",
+      "images": {
+        "xs": "",
+        "sm": "",
+        "md": "",
+        "lg": ""
+      },
+      "id": "NC5-mqw"
     }
   ]
 }

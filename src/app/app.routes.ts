@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { heroEditGuard } from 'src/app/guards/hero-edit.guard';
 
 export const routes: Routes = [
-   // { path: '', redirectTo: '/superheroes', pathMatch: 'full' },
+   { path: '', redirectTo: '/superheroes', pathMatch: 'full' },
    {
       path: 'superheroes',
       loadComponent: () => import('src/app/components/superheroes/superhero-list/superhero-list.component').then(m => m.SuperheroListComponent),

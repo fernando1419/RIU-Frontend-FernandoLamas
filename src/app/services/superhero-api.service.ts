@@ -3,8 +3,9 @@ import { Injectable, signal } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { Superhero } from 'src/app/models/superhero.interface';
+import { environment } from 'src/environments/environment';
 
-const API_URL: string = 'http://localhost:3000/superheroes';
+const API_URL: string = `${environment.apiUrl}/superheroes`;
 
 @Injectable({
    providedIn: 'root',

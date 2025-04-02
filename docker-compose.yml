@@ -1,0 +1,37 @@
+services:
+  angular-build:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.angular-nginx
+    container_name: angular-nginx
+    ports:
+      - "8000:80"
+    depends_on:
+      - json-server
+    volumes:
+      - ./docker/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - app-network
+
+  json-server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.json-server
+    container_name: json-server
+    # working_dir: /json-server
+    # command: ["node", "server.js"]
+    volumes:
+      - ./src/app/data/db.json:/json-server/db.json
+      - ./src/app/data/server.js:/json-server/server.js
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    name: Backend-Network
+    driver: bridge

@@ -21,7 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
    Run the following command in the directory containing `docker-compose.yml`:
 
    ```bash
-   docker-compose up --build
+   docker-compose up -d --build
    ```
 
-> The app will start and be available at <http://localhost:8080>.
+> The app will start and be available at <http://localhost:8000>.

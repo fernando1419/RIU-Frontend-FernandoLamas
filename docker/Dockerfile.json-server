@@ -1,0 +1,15 @@
+FROM node:22-alpine
+
+WORKDIR /json-server
+
+COPY src/app/data/package.prod.json /json-server/package.json
+RUN npm install
+
+# Copy only needed files to start up json-server
+COPY src/app/data/db.json /json-server/db.json
+COPY src/app/data/server.js /json-server/server.js
+
+EXPOSE 3000
+
+# This runs ./json-server/server.js inside the container
+CMD ["node", "server.js"]
