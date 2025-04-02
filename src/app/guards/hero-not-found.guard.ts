@@ -5,7 +5,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 
-export const heroEditGuard: CanActivateFn = (route: ActivatedRouteSnapshot): Observable<boolean> => {
+export const heroNotFoundGuard: CanActivateFn = (route: ActivatedRouteSnapshot): Observable<boolean> => {
    const superheroApiService = inject(SuperheroApiService);
    const router = inject(Router);
    const snackBar = inject(MatSnackBar);
