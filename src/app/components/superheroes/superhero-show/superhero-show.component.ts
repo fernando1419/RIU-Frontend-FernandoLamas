@@ -16,7 +16,7 @@ export class SuperheroShowComponent {
    private route = inject(ActivatedRoute);
    private superheroApiService = inject(SuperheroApiService);
    router = inject(Router);
-   heroId = computed(() => this.route.snapshot.paramMap.get('id')); // because json-server generates ids like: "1aDfa"
+   heroId = computed(() => this.route.snapshot.paramMap.get('id'));
    protected hero!: Superhero;
 
    constructor() {

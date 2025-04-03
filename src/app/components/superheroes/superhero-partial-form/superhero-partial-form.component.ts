@@ -20,7 +20,7 @@ export class SuperheroPartialFormComponent implements OnChanges {
    universeList: Universe[] = [Universe.Dc, Universe.Marvel];
    teamList: Team[] = Array.from(Object.values(Team));
 
-   powersList: string[] = [ // TODO: remove asap!
+   powersList: string[] = [
       'Web-slinging',
       'Wall-crawling',
       'Super strength',

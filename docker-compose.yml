@@ -19,8 +19,6 @@ services:
       context: .
       dockerfile: docker/Dockerfile.json-server
     container_name: json-server
-    # working_dir: /json-server
-    # command: ["node", "server.js"]
     volumes:
       - ./src/app/data/db.json:/json-server/db.json
       - ./src/app/data/server.js:/json-server/server.js

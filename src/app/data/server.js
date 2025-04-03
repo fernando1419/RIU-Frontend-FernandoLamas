@@ -6,8 +6,8 @@ const { router: _router, bodyParser, create, defaults } = pkg;
 const server = create();
 /* global process */
 const dbPath = typeof process !== 'undefined' && process.env.NODE_ENV === "production"
-   ? "/json-server/db.json" // Production (Docker)
-   : "src/app/data/db.json"; // Development
+   ? "/json-server/db.json"
+   : "src/app/data/db.json";
 
 const router = _router(dbPath);
 const middlewares = defaults();
@@ -29,7 +29,7 @@ server.use((req, res, next) => {
       }
    }
 
-   setTimeout(next, delay); // just to display loading indicator feature.
+   setTimeout(next, delay);
 });
 
 server.use(router);

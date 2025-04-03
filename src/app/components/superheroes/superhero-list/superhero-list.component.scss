@@ -13,8 +13,6 @@
 .search-bar {
    .disabled-icon {
       color: rgba(0, 0, 0, 0.38);
-      /* Material disabled color */
-      // cursor: not-allowed;
    }
 }
 
@@ -41,13 +39,10 @@
 .mat-mdc-header-cell {
    background-color: #3f51b5 !important;
    color: white;
-   // text-align: center;
 }
 
 .mat-mdc-cell {
    background-color: white;
-   // text-align: center;
-   // justify-content: center;
 }
 
 .mat-mdc-paginator,

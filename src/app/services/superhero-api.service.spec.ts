@@ -38,9 +38,9 @@ describe('SuperheroApiService', () => {
             expect(heroes.length).toBe(3);
          });
 
-         const req = httpTesting.expectOne(API_URL); // intercepts the request before a real request is made.
+         const req = httpTesting.expectOne(API_URL);
          expect(req.request.method).toBe('GET');
-         req.flush(fakeHeroes); // simulates the response from server using fake data.
+         req.flush(fakeHeroes);
       });
    });
 
@@ -107,7 +107,6 @@ describe('SuperheroApiService', () => {
          expect(postRequest.request.method).toBe('POST');
          postRequest.flush(newHero);
 
-         // refresh list after POST:
          const getRequest = httpTesting.expectOne(API_URL);
          expect(getRequest.request.method).toBe('GET');
          getRequest.flush([newHero]);
@@ -118,7 +117,6 @@ describe('SuperheroApiService', () => {
             name: 'new hero name',
             realName: 'new hero real name',
             powers: ['power1', 'power2'],
-            // universe: Universe.Dc,
          } as Superhero;
 
          service.addHero(heroWithoutUniverse).subscribe({
@@ -167,7 +165,6 @@ describe('SuperheroApiService', () => {
             name: 'new hero name',
             realName: 'new hero real name',
             powers: ['power1', 'power2'],
-            // universe: Universe.Dc,
          } as Superhero;
 
          service.updateHero(heroWithoutUniverse.id, heroWithoutUniverse).subscribe({
@@ -191,7 +188,7 @@ describe('SuperheroApiService', () => {
       it('should delete a superhero', () => {
          const heroId: number = 10;
 
-         const updatedHeroes = [ // missing the deleted hero with id = 10
+         const updatedHeroes = [
             { id: 7, name: 'Superman', realName: 'Clark Kent' },
             { id: 8, name: 'Batman', realName: 'Bruce Wayne' },
             { id: 9, name: 'Robin', realName: 'Mark London' },
@@ -211,7 +208,7 @@ describe('SuperheroApiService', () => {
       });
 
       it('should return an error if a superhero cannot be deleted', () => {
-         const heroId = 9999; // unExisting hero in DB.
+         const heroId = 9999;
          const errorMessage = 'Hero not found';
 
          service.deleteHero(heroId).subscribe({

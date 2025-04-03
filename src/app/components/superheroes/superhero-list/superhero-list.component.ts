@@ -58,8 +58,14 @@ export class SuperheroListComponent implements OnInit, AfterViewInit {
       this.superheroApiService.getAllHeroes().subscribe(data => {
          this.dataSource.data = data;
          this.dataSource.paginator = this.paginator;
-         this.dataSource.filterPredicate = (heroes: Superhero, filter: string) =>
-            heroes.name.toLowerCase().includes(filter); // filter by hero's name.
+         this.dataSource.filterPredicate = (hero: Superhero, filter: string) => {
+            if (!filter) { return true; }
+
+            const lowerFilter = filter.trim().toLowerCase();
+            const heroName = hero.name.trim().toLowerCase();
+
+            return heroName.includes(lowerFilter);
+         };
       });
    }
 

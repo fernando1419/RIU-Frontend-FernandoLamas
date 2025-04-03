@@ -18,7 +18,6 @@ export class SuperheroAddComponent {
    snackBar: MatSnackBar = inject(MatSnackBar);
 
    saveHero(newHeroData: Superhero) {
-      // console.log('Form submitted', newHeroData);
       this.superheroApiService.addHero(newHeroData).subscribe({
          next: () => {
             this.snackBar.open(`Hero added successfully!`, 'Close', {
@@ -27,7 +26,7 @@ export class SuperheroAddComponent {
                verticalPosition: 'bottom',
                panelClass: ['success-snackbar'],
             });
-            this.router.navigate(['/superheroes']); // update successful
+            this.router.navigate(['/superheroes']);
          },
          error: (err) => {
             this.snackBar.open('Error when trying to insert a hero', 'close', {

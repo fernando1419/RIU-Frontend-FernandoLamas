@@ -17,7 +17,7 @@ import { SuperheroApiService } from 'src/app/services/superhero-api.service';
 import { SuperheroListComponent } from 'src/app/components/superheroes/superhero-list/superhero-list.component';
 
 class MockSuperheroesService {
-   getAllHeroes() { // it must be called exactly 'getAllHeroes' as it is called in the real service.
+   getAllHeroes() {
       return of([
          { id: 1, name: 'Batman', realName: 'Bruce Wayne', powers: ['Stealth'], universe: 'DC', firstAppearance: 'Batman #1' },
          { id: 2, name: 'Iron Man', realName: 'Tony Stark', powers: ['Genius'], universe: 'Marvel', firstAppearance: 'Iron Man #1' },
@@ -45,13 +45,13 @@ describe('SuperheroListComponent', () => {
             NoopAnimationsModule,
          ],
          providers: [
-            provideRouter([]), // replaces RouterTestingModule from Angular 17+
-            provideHttpClient(withFetch()),  // inject HttpClient for tests
+            provideRouter([]),
+            provideHttpClient(withFetch()),
             {
                provide: ActivatedRoute,
-               useValue: { paramMap: of({ get: () => '1' }) }, // Mock for ActivatedRoute
+               useValue: { paramMap: of({ get: () => '1' }) },
             },
-            { provide: SuperheroApiService, useClass: MockSuperheroesService }, // replace my service with mock.
+            { provide: SuperheroApiService, useClass: MockSuperheroesService },
          ],
       }).compileComponents();
 
@@ -64,7 +64,6 @@ describe('SuperheroListComponent', () => {
 
    it('should use the mocked service instead of the real service', () => {
       const injectedService = component.superheroApiService;
-      console.log({ injectedService }); // LOG: Object{injectedService: MockSuperheroesService{}}
 
       expect(injectedService instanceof MockSuperheroesService).toBeTrue();
    });
@@ -81,7 +80,7 @@ describe('SuperheroListComponent', () => {
 
    it('should display data in the table loaded from service', () => {
       const rows = fixture.debugElement.queryAll(By.css('table#superheroes-table tr'));
-      expect(rows.length).toBe(3); // 1 header + 2 records
+      expect(rows.length).toBe(3);
 
       const heroNames = fixture.debugElement.queryAll(By.css('td'));
       expect(heroNames.some(td => td.nativeElement.textContent.includes('Batman'))).toBeTrue();
@@ -114,12 +113,12 @@ describe('SuperheroListComponent', () => {
 
    it('should render an edit button for each data row of the table', () => {
       const editButtons = fixture.debugElement.queryAll(By.css('button[mat-mini-fab][color="primary"][aria-label="Edits a superhero"]'));
-      expect(editButtons.length).toBe(2); // 1 edit button per row
+      expect(editButtons.length).toBe(2);
    });
 
    it('should render a delete button for each data row of the table', () => {
       const deleteButtons = fixture.debugElement.queryAll(By.css('button[mat-mini-fab][color="primary"][aria-label="Deletes a superhero"]'));
-      expect(deleteButtons.length).toBe(2); // 1 delete button per row
+      expect(deleteButtons.length).toBe(2);
    });
 
    it('should have the correct routerLink for adding a superhero', () => {
@@ -129,8 +128,8 @@ describe('SuperheroListComponent', () => {
 
    it('should have the correct routerLink for editing a superhero', () => {
       const editButtons = fixture.debugElement.queryAll(By.css('button[aria-label="Edits a superhero"]'));
-      expect(editButtons[0]).toBeTruthy(); // edit button1
-      expect(editButtons[1]).toBeTruthy(); // edit button2
+      expect(editButtons[0]).toBeTruthy();
+      expect(editButtons[1]).toBeTruthy();
 
       const routerLink1 = editButtons[0].attributes['ng-reflect-router-link'];
       expect(routerLink1).toEqual('/superheroes/edit,1');
@@ -157,7 +156,7 @@ describe('SuperheroListComponent', () => {
       const rows = fixture.debugElement.queryAll(By.css('table#superheroes-table tr'));
 
       expect(rows.some(row => row.nativeElement.textContent.includes('Batman'))).toBeTrue();
-      expect(rows.length).toBe(2); // 1 header + 1 record
+      expect(rows.length).toBe(2);
    });
 
    it('should clear the filter when user clicks on the clear button', () => {

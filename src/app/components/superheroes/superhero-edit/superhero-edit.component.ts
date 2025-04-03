@@ -13,8 +13,7 @@ import { SuperheroApiService } from 'src/app/services/superhero-api.service';
    styleUrl: './superhero-edit.component.scss',
 })
 export class SuperheroEditComponent {
-   // protected heroId: number | string | null = null;
-   heroId = computed(() => this.route.snapshot.paramMap.get('id')); // because json-server generates ids like: "1aDfa"
+   heroId = computed(() => this.route.snapshot.paramMap.get('id'));
    protected heroDataFromDB: Superhero | null = null;
 
    private route = inject(ActivatedRoute);
@@ -25,7 +24,7 @@ export class SuperheroEditComponent {
 
    constructor() {
       effect(() => {
-         const id = this.heroId(); // this needs { allowSignalWrites: true } to avoid NG0600 error.
+         const id = this.heroId();
          if (id) {
             this.superheroApiService.getHeroById(id).subscribe({
                next: (hero) => this.heroDataFromDB = hero,
@@ -45,7 +44,7 @@ export class SuperheroEditComponent {
                   verticalPosition: 'bottom',
                   panelClass: ['success-snackbar'],
                });
-               this.router.navigate(['/superheroes']); // update successful
+               this.router.navigate(['/superheroes']);
             },
             error: (err) => {
                this.snackBar.open('Error when trying to edit hero', 'close', {

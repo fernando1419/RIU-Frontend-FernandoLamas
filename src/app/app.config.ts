@@ -8,7 +8,7 @@ import { routes } from './app.routes';
 export const appConfig: ApplicationConfig = {
    providers: [
       provideZoneChangeDetection({ eventCoalescing: true }),
-      provideRouter(routes, withPreloading(PreloadAllModules)), // pre-loads all LAZY-LOADED routes in background after application starts.
+      provideRouter(routes, withPreloading(PreloadAllModules)),
       provideAnimationsAsync(),
       provideHttpClient(),
       provideHttpClient(withInterceptors([loadingInterceptor])),

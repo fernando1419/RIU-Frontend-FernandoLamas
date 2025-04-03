@@ -21,19 +21,18 @@ export default [
             expect: "readonly",
             beforeEach: "readonly",
             afterEach: "readonly",
-            jest: "readonly" // if using jest
+            jest: "readonly"
          },
       },
       plugins: {
-         "jest": jestPlugin, // enable jest rules
+         "jest": jestPlugin,
          "@angular-eslint": angularEslint,
-         // "@typescript-eslint": tsPlugin,
          "@typescript-eslint": tsEslint,
 
       },
       rules: {
          "no-unused-vars": "off",
-         "no-undef": "off", // avoid false positives
+         "no-undef": "off",
          "@typescript-eslint/no-unused-vars": "warn",
          "@typescript-eslint/explicit-function-return-type": "off",
          "@typescript-eslint/no-explicit-any": "warn",
@@ -44,7 +43,6 @@ export default [
          "no-const-assign": "error",
          "no-var": "error",
          "prefer-const": "error",
-         // "no-console": ["warn", { allow: ["warn", "error"] }],
          "no-debugger": "error",
          "no-trailing-spaces": "error",
          "comma-dangle": ["error", "always-multiline"],
@@ -66,19 +64,17 @@ export default [
          "block-spacing": ["error", "always"],
          "eol-last": ["error", "always"],
          "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }], // blank lines between methods only, not between properties
+         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
          "no-mixed-spaces-and-tabs": "error",
          "padded-blocks": ["error", "never"],
          "space-in-parens": ["error", "never"],
          "space-infix-ops": "error",
          "space-unary-ops": ["error", { "words": true, "nonwords": false }],
          "switch-colon-spacing": ["error", { "after": true, "before": false }],
-         // Angular
          "@angular-eslint/no-input-rename": "error",
          "@angular-eslint/no-output-rename": "error",
          "@angular-eslint/no-lifecycle-call": "error",
          "@angular-eslint/use-lifecycle-interface": "error",
-         // "@angular-eslint/prefer-on-push-component-change-detection": "warn"
       },
    },
    {
@@ -96,7 +92,7 @@ export default [
          "jest/no-disabled-tests": "warn",
          "jest/no-focused-tests": "error",
          "jest/no-identical-title": "error",
-         "@typescript-eslint/no-explicit-any": "off", // Allows any en tests
+         "@typescript-eslint/no-explicit-any": "off",
       },
    },
 ];
