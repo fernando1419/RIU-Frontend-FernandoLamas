@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Router } from '@angular/router';
 import { UppercaseDirective } from 'src/app/directives/uppercase.directive';
-import { Superhero, Team, Universe } from 'src/app/models/superhero.interface';
+import { Superhero, Team, Universe, powers } from 'src/app/models/superhero.interface';
 
 @Component({
    selector: 'app-superhero-partial-form',
@@ -19,18 +19,7 @@ export class SuperheroPartialFormComponent implements OnChanges {
    superheroForm!: FormGroup;
    universeList: Universe[] = [Universe.Dc, Universe.Marvel];
    teamList: Team[] = Array.from(Object.values(Team));
-
-   powersList: string[] = [
-      'Web-slinging',
-      'Wall-crawling',
-      'Super strength',
-      'Spider sense',
-      'Flight',
-      'Laser vision',
-      'Invisibility',
-      'Teleportation',
-      'Super speed',
-   ];
+   powersList: string[] = powers;
 
    @Input() formTitle: string = '';
    @Input() heroData: Superhero | null = {} as Superhero;
